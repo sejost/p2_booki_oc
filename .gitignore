@@ -1,0 +1,17 @@
+# No documents type .pdf .docx .doc .txt .md
+*.pdf
+*.txt
+*.docx
+*.doc
+*.md
+
+# No documents mock-up files
+*.DS_Store
+
+#No auto generated sass/scss files
+
+*.map
+
+#no mock-up folder
+/ressources/mock-up
+
