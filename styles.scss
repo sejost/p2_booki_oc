@@ -1,10 +1,16 @@
+$basic-blue: #0065fc;
+$light-blue: #deebff;
+$basic-gray: #f2f2f2;
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
 }
 header {
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     #logo {
         display: flex;
         justify-content: center;
@@ -32,19 +38,21 @@ header {
                 text-decoration: none;
             }
             a:hover {
-                color: blue;
+                color: $light-blue;
             }
             a:visited {
                 color: black;
             }
             #a-hostings {
-                color: blue;
+                color: $basic-blue;
             }
         }
     }
 }
 
-.selectors {
+//Pour mobile
+/*
+.mobile-selectors {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -52,14 +60,15 @@ header {
     height: 3.5px;
     background: rgba(185, 185, 185, 0.459);
     z-index: 0;
-    .left-selector {
+    .mobile-left-selec {
         width: 50%;
         height: 3.5px;
-        background: blue;
+        background: $basic-blue;
         z-index: 1;
     }
-    .right-selector {
+    .mobile-right-selec {
         width: 50%;
         height: 3.5px;
     }
 }
+*/
