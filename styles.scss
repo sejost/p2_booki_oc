@@ -1,3 +1,5 @@
+//SCSS Library
+
 $basic-blue: #0065fc;
 $light-blue: #deebff;
 $basic-gray: #f2f2f2;
@@ -7,14 +9,21 @@ $Medium: 18px;
 $Small: 14px;
 $XSmall: 8px;
 
+//CSS Init
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
     color: black;
+    ::selection {
+        background-color: $basic-blue;
+        color: white;
+    }
 }
 
+//Header Part
+// Desktop
 header {
     display: flex;
     justify-content: space-between;
@@ -49,6 +58,8 @@ header {
     }
 }
 
+//Header Part
+// Mobile - less than 768px
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -85,6 +96,58 @@ header {
             bottom: 0;
             right: 0;
             top: 15px;
+        }
+    }
+}
+
+//Accomodations Search Section
+section {
+    padding: 0 4%;
+    font-size: $Medium;
+}
+
+.accomodations {
+    h1 {
+        font-size: $Large;
+        margin-bottom: 5px;
+    }
+    form {
+        padding: 20px 0;
+        display: flex;
+        .city-choice {
+            display: flex;
+            height: 45px;
+
+            .icon {
+                height: 100%;
+                width: 45px;
+                background: $basic-gray;
+                border-radius: 10px 0 0 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+            }
+            input {
+                font-weight: 600;
+            }
+            #Search-Zone {
+                width: 220px;
+                padding-left: 20px;
+                border: solid $basic-gray;
+                border-width: 1px 0;
+            }
+            #Search-Zone:focus {
+                outline: 1px solid $basic-blue;
+            }
+            #Search-Btn {
+                border: none;
+                width: 130px;
+                border-radius: 0 10px 10px 0;
+                background: $basic-blue;
+                color: white;
+                cursor: pointer;
+            }
         }
     }
 }

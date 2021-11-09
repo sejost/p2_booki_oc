@@ -7,6 +7,16 @@
   color: black;
 }
 
+* ::-moz-selection {
+  background-color: #0065fc;
+  color: white;
+}
+
+* ::selection {
+  background-color: #0065fc;
+  color: white;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,5 +103,70 @@ header .logo {
     right: 0;
     top: 15px;
   }
+}
+
+section {
+  padding: 0 4%;
+  font-size: 18px;
+}
+
+.accomodations h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.accomodations form {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.accomodations form .city-choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+}
+
+.accomodations form .city-choice .icon {
+  height: 100%;
+  width: 45px;
+  background: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+.accomodations form .city-choice input {
+  font-weight: 600;
+}
+
+.accomodations form .city-choice #Search-Zone {
+  width: 220px;
+  padding-left: 20px;
+  border: solid #f2f2f2;
+  border-width: 1px 0;
+}
+
+.accomodations form .city-choice #Search-Zone:focus {
+  outline: 1px solid #0065fc;
+}
+
+.accomodations form .city-choice #Search-Btn {
+  border: none;
+  width: 130px;
+  border-radius: 0 10px 10px 0;
+  background: #0065fc;
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
