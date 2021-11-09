@@ -28,15 +28,15 @@ header .logo {
 .navlinks li {
   list-style-type: none;
   display: inline-block;
-  padding-right: 100px;
+  width: 150px;
+  text-align: center;
 }
 
 .navlinks li div {
   height: 3px;
-  width: 150%;
+  width: 100%;
   position: relative;
   bottom: 68px;
-  right: 25%;
 }
 
 .navlinks li a {
@@ -82,7 +82,6 @@ header .logo {
     list-style-type: none;
     display: inline-block;
     padding-right: 0;
-    text-align: center;
     width: 50%;
   }
   .navlinks li div {

@@ -29,13 +29,13 @@ header {
 .navlinks li {
     list-style-type: none;
     display: inline-block;
-    padding-right: 100px;
+    width: 150px;
+    text-align: center;
     div {
         height: 3px;
-        width: 150%;
+        width: 100%;
         position: relative;
         bottom: 68px;
-        right: 25%;
     }
     a {
         text-decoration: none;
@@ -75,7 +75,7 @@ header {
         list-style-type: none;
         display: inline-block;
         padding-right: 0;
-        text-align: center;
+
         width: 50%;
         div {
             background: $basic-gray;
