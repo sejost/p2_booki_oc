@@ -9,6 +9,8 @@
 *.DS_Store
 
 #No auto generated sass/scss files
+
+
 *.map
 
 #no mock-up folder

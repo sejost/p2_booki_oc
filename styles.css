@@ -4,89 +4,52 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  color: black;
 }
 
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 4%;
 }
 
-header #logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
+header .logo {
+  cursor: pointer;
+  width: 5%;
 }
 
-header #logo img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 30%;
-  padding-left: 10%;
+.navlinks li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 100px;
 }
 
-.navlinks ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: black;
+.navlinks li div {
+  background: #deebff;
+  height: 3px;
+  width: 150%;
+  position: relative;
+  bottom: 58px;
+  right: 25%;
 }
 
-.navlinks ul li {
-  list-style: none;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.navlinks ul li a {
+.navlinks li a {
   text-decoration: none;
 }
 
-.navlinks ul li a:hover {
-  color: #deebff;
-}
-
-.navlinks ul li a:visited {
-  color: black;
-}
-
-.navlinks ul li #a-hostings {
+.navlinks li a:hover {
   color: #0065fc;
 }
 
-/*
-.mobile-selectors {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    width: 100%;
-    height: 3.5px;
-    background: rgba(185, 185, 185, 0.459);
-    z-index: 0;
-    .mobile-left-selec {
-        width: 50%;
-        height: 3.5px;
-        background: $basic-blue;
-        z-index: 1;
-    }
-    .mobile-right-selec {
-        width: 50%;
-        height: 3.5px;
-    }
+.navlinks li a:hover + .first-select,
+.navlinks li a:hover + .second-select {
+  background-color: #0065fc;
 }
-*/
 /*# sourceMappingURL=styles.css.map */
