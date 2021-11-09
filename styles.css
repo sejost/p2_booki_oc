@@ -18,11 +18,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 4%;
+  font-size: 18px;
 }
 
 header .logo {
   cursor: pointer;
-  width: 5%;
+  width: 60%;
 }
 
 .navlinks li {
@@ -36,7 +37,7 @@ header .logo {
   height: 3px;
   width: 150%;
   position: relative;
-  bottom: 58px;
+  bottom: 68px;
   right: 25%;
 }
 
