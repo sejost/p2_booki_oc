@@ -22,7 +22,6 @@ header {
     padding: 30px 4%;
     font-size: $Medium;
     .logo {
-        cursor: pointer;
         width: 60%;
     }
 }
@@ -47,5 +46,45 @@ header {
     a:hover + .first-select,
     a:hover + .second-select {
         background-color: $basic-blue;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 10px 0 0 0;
+        .logo-a {
+            padding-bottom: 5%;
+        }
+        .logo {
+            width: 75%;
+            position: relative;
+            left: 23%;
+        }
+    }
+
+    nav,
+    .navlinks {
+        width: 100%;
+        display: flex;
+    }
+
+    .navlinks li {
+        font-size: $Large;
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 0;
+        text-align: center;
+        width: 50%;
+        div {
+            background: $basic-gray;
+            height: 4px;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            top: 15px;
+        }
     }
 }

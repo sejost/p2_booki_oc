@@ -22,7 +22,6 @@ header {
 }
 
 header .logo {
-  cursor: pointer;
   width: 60%;
 }
 
@@ -51,5 +50,49 @@ header .logo {
 .navlinks li a:hover + .first-select,
 .navlinks li a:hover + .second-select {
   background-color: #0065fc;
+}
+
+@media (max-width: 768px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px 0 0 0;
+  }
+  header .logo-a {
+    padding-bottom: 5%;
+  }
+  header .logo {
+    width: 75%;
+    position: relative;
+    left: 23%;
+  }
+  nav,
+  .navlinks {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navlinks li {
+    font-size: 24px;
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 0;
+    text-align: center;
+    width: 50%;
+  }
+  .navlinks li div {
+    background: #f2f2f2;
+    height: 4px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    top: 15px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
