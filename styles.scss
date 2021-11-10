@@ -3,6 +3,7 @@
 $basic-blue: #0065fc;
 $light-blue: #deebff;
 $basic-gray: #f2f2f2;
+$darker-gray: #d9d9d9;
 $XLarge: 32px;
 $Large: 24px;
 $Medium: 18px;
@@ -91,7 +92,7 @@ header {
         div {
             background: $basic-gray;
             height: 4px;
-            width: 100%;
+            //width: 100%;
             position: relative;
             bottom: 0;
             right: 0;
@@ -101,25 +102,31 @@ header {
 }
 
 //Accomodations Search Section
+// Desktop
 section {
     padding: 0 4%;
     font-size: $Medium;
 }
 
-.accomodations {
-    h1 {
-        font-size: $Large;
-        margin-bottom: 5px;
-    }
-    form {
-        padding: 20px 0;
-        display: flex;
+h1 {
+    font-size: $Large;
+    margin-bottom: 5px;
+}
+form {
+    padding: 20px 0;
+    fieldset {
+        padding: 0;
+        margin: 0;
+        border: none;
+        legend {
+            font-weight: 600;
+        }
         .city-choice {
-            display: flex;
             height: 45px;
-
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
             .icon {
-                height: 100%;
                 width: 45px;
                 background: $basic-gray;
                 border-radius: 10px 0 0 10px;
@@ -128,25 +135,114 @@ section {
                 justify-content: center;
                 text-decoration: none;
             }
+            .icon:hover {
+                background: $basic-blue;
+                color: white;
+            }
             input {
                 font-weight: 600;
             }
-            #Search-Zone {
+            .search-zone {
                 width: 220px;
                 padding-left: 20px;
                 border: solid $basic-gray;
                 border-width: 1px 0;
             }
-            #Search-Zone:focus {
+            .search-zone:focus {
                 outline: 1px solid $basic-blue;
             }
-            #Search-Btn {
+            .search-btn {
                 border: none;
                 width: 130px;
                 border-radius: 0 10px 10px 0;
                 background: $basic-blue;
                 color: white;
                 cursor: pointer;
+            }
+            .search-btn:hover {
+                background: $basic-gray;
+                color: black;
+            }
+            button {
+                display: none;
+            }
+        }
+        .filterssearch {
+            display: flex;
+            align-items: baseline;
+            height: 45px;
+            input[type="checkbox"] {
+                opacity: 1;
+            }
+            #cbx-economical:checked ~ .filterssearch {
+                background: white;
+            }
+            i {
+                display: flex;
+                background: $light-blue;
+                color: $basic-blue;
+                height: 43px;
+                width: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 30px;
+                position: relative;
+                //left: 44px;
+            }
+            label {
+                border: solid $darker-gray;
+                border-width: 2px;
+                border-radius: 30px;
+                padding: 10px 10px 10px 0;
+                cursor: pointer;
+            }
+            label:hover {
+                background: $light-blue;
+                border: solid $light-blue;
+                border-width: 2px;
+            }
+        }
+    }
+}
+
+#checkbox-economical:checked ~ #label-economical {
+    background: red;
+}
+
+//Accomodations Search Section
+// Mobile
+@media (max-width: 768px) {
+    section {
+        padding: 20px 5% 0 5%;
+    }
+
+    form {
+        //padding: 20px 0;
+        display: flex;
+        .city-choice {
+            display: flex;
+
+            .icon {
+                width: 45px;
+            }
+            input {
+                font-weight: 600;
+            }
+            .Search-Zone {
+                width: 220px;
+                padding-left: 20px;
+            }
+            .Desktop-Btn {
+                display: none;
+            }
+            .Mobile-Btn {
+                display: inline;
+                width: 45px;
+
+                i {
+                    color: white;
+                }
             }
         }
     }

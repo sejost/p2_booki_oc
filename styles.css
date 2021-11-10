@@ -97,7 +97,6 @@ header .logo {
   .navlinks li div {
     background: #f2f2f2;
     height: 4px;
-    width: 100%;
     position: relative;
     bottom: 0;
     right: 0;
@@ -110,27 +109,38 @@ section {
   font-size: 18px;
 }
 
-.accomodations h1 {
+h1 {
   font-size: 24px;
   margin-bottom: 5px;
 }
 
-.accomodations form {
+form {
   padding: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-.accomodations form .city-choice {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+form fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+form fieldset legend {
+  font-weight: 600;
+}
+
+form fieldset .city-choice {
   height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
 }
 
-.accomodations form .city-choice .icon {
-  height: 100%;
+form fieldset .city-choice .icon {
   width: 45px;
   background: #f2f2f2;
   border-radius: 10px 0 0 10px;
@@ -146,27 +156,132 @@ section {
   text-decoration: none;
 }
 
-.accomodations form .city-choice input {
+form fieldset .city-choice .icon:hover {
+  background: #0065fc;
+  color: white;
+}
+
+form fieldset .city-choice input {
   font-weight: 600;
 }
 
-.accomodations form .city-choice #Search-Zone {
+form fieldset .city-choice .search-zone {
   width: 220px;
   padding-left: 20px;
   border: solid #f2f2f2;
   border-width: 1px 0;
 }
 
-.accomodations form .city-choice #Search-Zone:focus {
+form fieldset .city-choice .search-zone:focus {
   outline: 1px solid #0065fc;
 }
 
-.accomodations form .city-choice #Search-Btn {
+form fieldset .city-choice .search-btn {
   border: none;
   width: 130px;
   border-radius: 0 10px 10px 0;
   background: #0065fc;
   color: white;
   cursor: pointer;
+}
+
+form fieldset .city-choice .search-btn:hover {
+  background: #f2f2f2;
+  color: black;
+}
+
+form fieldset .city-choice button {
+  display: none;
+}
+
+form fieldset .filterssearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  height: 45px;
+}
+
+form fieldset .filterssearch input[type="checkbox"] {
+  opacity: 1;
+}
+
+form fieldset .filterssearch #cbx-economical:checked ~ .filterssearch {
+  background: white;
+}
+
+form fieldset .filterssearch i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #deebff;
+  color: #0065fc;
+  height: 43px;
+  width: 45px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  position: relative;
+}
+
+form fieldset .filterssearch label {
+  border: solid #d9d9d9;
+  border-width: 2px;
+  border-radius: 30px;
+  padding: 10px 10px 10px 0;
+  cursor: pointer;
+}
+
+form fieldset .filterssearch label:hover {
+  background: #deebff;
+  border: solid #deebff;
+  border-width: 2px;
+}
+
+#checkbox-economical:checked ~ #label-economical {
+  background: red;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 20px 5% 0 5%;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  form .city-choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  form .city-choice .icon {
+    width: 45px;
+  }
+  form .city-choice input {
+    font-weight: 600;
+  }
+  form .city-choice .Search-Zone {
+    width: 220px;
+    padding-left: 20px;
+  }
+  form .city-choice .Desktop-Btn {
+    display: none;
+  }
+  form .city-choice .Mobile-Btn {
+    display: inline;
+    width: 45px;
+  }
+  form .city-choice .Mobile-Btn i {
+    color: white;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

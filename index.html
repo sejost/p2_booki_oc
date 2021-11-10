@@ -45,32 +45,49 @@
             <p>En plein centre ville ou en pleine nature</p>
         </div>
 
-        <form action="#" method="#" class="city-choice">
-            <div class="city-choice">
-                <a href="#" class="icon"><i class="fas fa-map-marker-alt"></i></a><input id="Search-Zone"
-                    placeholder="Marseille, France" type="text" name="city" id="city" required>
-            </div>
-            <div class="city-choice">
-                <input id="Search-Btn" type="submit" value="Rechercher">
-            </div>
+        <form action="#" method="#" class="form-citysearch">
+            <!--Method : Post Action | : Send to the page-->
+            <fieldset class="fieldsearch">
+                <div class="city-choice">
+                    <a href="#" class="icon fas fa-map-marker-alt"></a>
+                    <input class="search-zone" placeholder="Marseille, France" type="text" name="location" id="city"
+                        required>
+                    <input class="search-btn desktop-btn" type="submit" value="Rechercher" name="location">
+                    <button class="search-btn mobile-btn" type="submit" name="location"><i
+                            class="fas fa-search"></i></button>
+                </div>
+            </fieldset>
+            <fieldset class="fieldfilters">
+                <div class="filterssearch">
+                    <legend>Filtres</legend>
+
+                    <i class="fas fa-money-bill-wave"></i>
+                    <label for="cbx-economical" id="label-economical">
+                        <input type="checkbox" name="economical" id="cbx-economical">
+                        Économique
+                    </label>
+
+                    <i class="fas fa-child"></i>
+                    <label for="cbx-family">
+                        <input type="checkbox" name="family" id="cbx-family">
+                        Familial
+                    </label>
+
+                    <i class="fas fa-money-bill-wave"></i>
+                    <label for="cbx-romantic">
+                        <input type="checkbox" name="romantic" id="cbx-romantic">Romantique
+                    </label>
+
+                    <i class="fas fa-money-bill-wave"></i>
+                    <label for="cbx-animals">
+                        <input type="checkbox" name="animals" id="cbx-animals">
+                        Animaux Autorisés
+                    </label>
+                </div>
+            </fieldset>
         </form>
 
-        <div class="filters">
-            <div class="economical">
-                <img src="" alt="" class="icon banknote">
-                <p>Économique</p>
-            </div>
-            <div class="family"></div>
-            <img src="" alt="" class="icon people">
-            <p>Familiale</p>
-            <div class="romantic"></div>
-            <img src="" alt="" class="icon heart">
-            <p>Romantique</p>
-            <div class="animals-allowed"></div>
-            <img src="" alt="" class="icon dog">
-            <p>Animaux autorisés</p>
 
-        </div>
 
         <div class="footer-panel">
             <img src="" alt="" class="icon info">
