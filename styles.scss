@@ -171,12 +171,6 @@ form {
             display: flex;
             align-items: baseline;
             height: 45px;
-            input[type="checkbox"] {
-                opacity: 1;
-            }
-            #cbx-economical:checked ~ .filterssearch {
-                background: white;
-            }
             i {
                 display: flex;
                 background: $light-blue;
@@ -202,12 +196,12 @@ form {
                 border: solid $light-blue;
                 border-width: 2px;
             }
+            input[type="checkbox"]:checked ~ label {
+                background: $basic-blue;
+                color: white;
+            }
         }
     }
-}
-
-#checkbox-economical:checked ~ #label-economical {
-    background: red;
 }
 
 //Accomodations Search Section
