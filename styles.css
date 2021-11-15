@@ -137,7 +137,7 @@ form fieldset .city-choice {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 form fieldset .city-choice .icon {
@@ -177,8 +177,8 @@ form fieldset .city-choice .search-zone:focus {
 }
 
 form fieldset .city-choice .search-btn {
-  border: none;
   width: 130px;
+  border: none;
   border-radius: 0 10px 10px 0;
   background: #0065fc;
   color: white;
@@ -201,17 +201,43 @@ form fieldset .filterssearch {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  height: 45px;
 }
 
-form fieldset .filterssearch i {
+form fieldset .filterssearch legend {
+  margin-right: 1%;
+}
+
+form fieldset .filterssearch .innerfilter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+form fieldset .filterssearch .innerfilter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+form fieldset .filterssearch .innerfilter div input[type="checkbox"] {
+  display: none;
+}
+
+form fieldset .filterssearch .innerfilter div input[type="checkbox"]:checked ~ label {
+  background: #0065fc;
+  color: white;
+}
+
+form fieldset .filterssearch .innerfilter div i {
   background: #deebff;
   color: #0065fc;
-  height: 43px;
   width: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -220,60 +246,67 @@ form fieldset .filterssearch i {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 30px;
-  position: relative;
+  z-index: 1;
 }
 
-form fieldset .filterssearch label {
+form fieldset .filterssearch .innerfilter div label {
   border: solid #d9d9d9;
   border-width: 2px;
   border-radius: 30px;
-  padding: 10px 10px 10px 0;
+  padding: 10px 10px 10px 50px;
   cursor: pointer;
+  position: relative;
+  right: 44px;
 }
 
-form fieldset .filterssearch label:hover {
+form fieldset .filterssearch .innerfilter div label:hover {
   background: #deebff;
   border: solid #deebff;
   border-width: 2px;
 }
 
-form fieldset .filterssearch input[type="checkbox"]:checked ~ label {
-  background: #0065fc;
-  color: white;
+@media (max-width: 992px) {
+  form fieldset .filterssearch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form fieldset .filterssearch legend {
+    margin-bottom: 2%;
+  }
+  form fieldset .filterssearch .innerfilter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  form fieldset .filterssearch .innerfilter div {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 768px) {
   section {
     padding: 20px 5% 0 5%;
   }
-  form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  form .city-choice {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  form .city-choice .icon {
+  form fieldset .city-choice .search-btn {
     width: 45px;
   }
-  form .city-choice input {
-    font-weight: 600;
-  }
-  form .city-choice .Search-Zone {
-    width: 220px;
-    padding-left: 20px;
-  }
-  form .city-choice .Desktop-Btn {
+  form fieldset .city-choice .desktop-btn {
     display: none;
   }
-  form .city-choice .Mobile-Btn {
+  form fieldset .city-choice .mobile-btn {
     display: inline;
-    width: 45px;
   }
-  form .city-choice .Mobile-Btn i {
+  form fieldset .city-choice .mobile-btn i {
     color: white;
   }
 }
