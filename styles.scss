@@ -170,35 +170,85 @@ form {
         .filterssearch {
             display: flex;
             align-items: baseline;
-            height: 45px;
-            i {
+            height: 50px;
+            .innerfilter {
                 display: flex;
-                background: $light-blue;
-                color: $basic-blue;
-                height: 43px;
-                width: 45px;
+                justify-content: space-around;
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    input[type="checkbox"] {
+                        display: none;
+                    }
+                    input[type="checkbox"]:checked ~ label {
+                        background: $basic-blue;
+                        color: white;
+                    }
+                    i {
+                        display: flex;
+                        background: $light-blue;
+                        color: $basic-blue;
+                        height: 43px;
+                        width: 45px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 30px;
+                        position: relative;
+                        left: 44px;
+                    }
+                    label {
+                        border: solid $darker-gray;
+                        border-width: 2px;
+                        border-radius: 30px;
+                        padding: 10px 10px 10px 50px;
+                        cursor: pointer;
+                    }
+                    label:hover {
+                        background: $light-blue;
+                        border: solid $light-blue;
+                        border-width: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Accomodations Search Section
+// Tablet
+@media (min-width: 769px) and (max-width: 992px) {
+    section {
+        //padding: 20px 5% 0 5%;
+    }
+
+    form {
+        fieldset {
+            .city-choice {
+                .search-btn {
+                    //width: 45px;
+                }
+                .desktop-btn {
+                    //display: none;
+                }
+            }
+            .filterssearch {
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 30px;
-                position: relative;
-                //left: 44px;
-            }
-            label {
-                border: solid $darker-gray;
-                border-width: 2px;
-                border-radius: 30px;
-                padding: 10px 10px 10px 0;
-                cursor: pointer;
-            }
-            label:hover {
-                background: $light-blue;
-                border: solid $light-blue;
-                border-width: 2px;
-            }
-            input[type="checkbox"]:checked ~ label {
-                background: $basic-blue;
-                color: white;
+                flex-direction: column;
+                align-content: flex-start;
+                .innerfilter {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    div {
+                        i {
+                        }
+                        label {
+                        }
+                    }
+                }
             }
         }
     }
@@ -212,30 +262,27 @@ form {
     }
 
     form {
-        //padding: 20px 0;
-        display: flex;
-        .city-choice {
-            display: flex;
-
-            .icon {
-                width: 45px;
+        fieldset {
+            .city-choice {
+                .search-btn {
+                    width: 45px;
+                }
+                .desktop-btn {
+                    display: none;
+                }
+                .mobile-btn {
+                    display: inline;
+                    i {
+                        color: white;
+                    }
+                }
             }
-            input {
-                font-weight: 600;
-            }
-            .Search-Zone {
-                width: 220px;
-                padding-left: 20px;
-            }
-            .Desktop-Btn {
-                display: none;
-            }
-            .Mobile-Btn {
-                display: inline;
-                width: 45px;
-
-                i {
-                    color: white;
+            .filterssearch {
+                div {
+                    i {
+                    }
+                    label {
+                    }
                 }
             }
         }
