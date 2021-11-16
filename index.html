@@ -48,6 +48,7 @@
         <form action="#" method="#" class="form-citysearch">
             <!--Method : Post Action | : Send to the page-->
             <fieldset class="fieldsearch">
+
                 <div class="city-choice">
                     <a href="#" class="icon fas fa-map-marker-alt"></a>
                     <input class="search-zone" placeholder="Marseille, France" type="text" name="location" id="city"
@@ -56,17 +57,51 @@
                     <button class="search-btn mobile-btn" type="submit" name="location"><i
                             class="fas fa-search"></i></button>
                 </div>
+
             </fieldset>
             <fieldset class="fieldfilters">
                 <div class="filterssearch">
 
                     <legend>Filtres</legend>
                     <div class="innerfilter">
-                        <div><input type="checkbox" name="economical" id="cbx-economical">
-                            <i class="fas fa-money-bill-wave"></i>
-                            <label for="cbx-economical" id="label-economical">Économique</label>
+
+                        <div class="filter">
+                            <input type="checkbox" name="economical" id="cbx-economical">
+                            <div class="innerlabel">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <label for="cbx-economical" id="label-economical">Économique</label>
+                            </div>
+                            </input>
                         </div>
 
+                        <div class="filter">
+                            <input type="checkbox" name="family" id="cbx-family">
+                            <div class="innerlabel">
+                                <i class="fas fa-child"></i>
+                                <label for="cbx-family">Familial</label>
+                            </div>
+                            </input>
+                        </div>
+
+                        <div class="filter">
+                            <input type="checkbox" name="romantic" id="cbx-romantic">
+                            <div class="innerlabel">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <label for="cbx-romantic">Romantique</label>
+                            </div>
+                            </input>
+                        </div>
+
+                        <div class="filter">
+                            <input type="checkbox" name="animals" id="cbx-animals">
+                            <div class="innerlabel">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <label for="cbx-animals">Animaux Autorisés</label>
+                            </div>
+                            </input>
+                        </div>
+
+                        <!--
                         <div><input type="checkbox" name="family" id="cbx-family">
                             <i class="fas fa-child"></i>
                             <label for="cbx-family">Familial</label>
@@ -80,7 +115,7 @@
                         <div><input type="checkbox" name="animals" id="cbx-animals">
                             <i class="fas fa-money-bill-wave"></i>
                             <label for="cbx-animals">Animaux Autorisés</label>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </fieldset>

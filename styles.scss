@@ -172,45 +172,56 @@ form {
             display: flex;
             align-items: baseline;
             legend {
-                margin-right: 1%;
+                margin-right: 2%;
             }
             .innerfilter {
                 display: flex;
-
-                div {
-                    display: flex;
-                    flex-direction: row;
-                    input[type="checkbox"] {
-                        display: none;
-                    }
-                    input[type="checkbox"]:checked ~ label {
+                input[type="checkbox"] {
+                    display: none;
+                    position: relative;
+                }
+                .filter {
+                    input[type="checkbox"]:hover + .innerlabel {
                         background: $basic-blue;
-                        color: white;
+                        i {
+                            background: $basic-gray;
+                            color: black;
+                        }
+                        label {
+                            color: white;
+                        }
                     }
+                    input[type="checkbox"]:checked ~ .innerlabel {
+                        background: $basic-blue;
+                        label {
+                            color: white;
+                        }
+                    }
+                }
+                .innerlabel {
+                    height: 45px;
+                    border: solid $darker-gray;
+                    border-width: 2px;
+                    border-radius: 0px 30px 30px 0px;
+                    display: flex;
+                    margin: 0 50px 0 0;
                     i {
                         background: $light-blue;
                         color: $basic-blue;
                         width: 45px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        height: calc(100% + 6px);
                         border-radius: 30px;
-                        z-index: 1;
+                        margin: -3px 0 0 -18px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                     label {
-                        border: solid $darker-gray;
-                        border-width: 2px;
-                        border-radius: 30px;
-                        padding: 10px 10px 10px 50px;
-                        //width: 215px;
+                        margin: 0 10px 0px 10px;
+                        align-items: center;
+                        font-weight: 600;
+                        display: flex;
                         cursor: pointer;
-                        position: relative;
-                        right: 44px;
-                    }
-                    label:hover {
-                        background: $light-blue;
-                        border: solid $light-blue;
-                        border-width: 2px;
                     }
                 }
             }
@@ -233,7 +244,7 @@ form {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: flex-start;
-                    div {
+                    .innerlabel {
                         margin-bottom: 15px;
                     }
                 }
