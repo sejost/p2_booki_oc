@@ -190,6 +190,10 @@ form fieldset .city-choice .search-btn:hover {
   color: black;
 }
 
+form fieldset .city-choice .search-btn:hover i {
+  color: black;
+}
+
 form fieldset .city-choice button {
   display: none;
 }

@@ -161,6 +161,9 @@ form {
             .search-btn:hover {
                 background: $basic-gray;
                 color: black;
+                i {
+                    color: black;
+                }
             }
             button {
                 display: none;
