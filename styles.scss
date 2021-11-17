@@ -1,16 +1,16 @@
-//SCSS Library
+/* Project Library - Colours - Sizes */
 
 $basic-blue: #0065fc;
 $light-blue: #deebff;
 $basic-gray: #f2f2f2;
 $darker-gray: #d9d9d9;
-$XLarge: 32px;
-$Large: 24px;
+$XLarge: 26px;
+$Large: 22px;
 $Medium: 17px;
 $Small: 12px;
 $XSmall: 8px;
 
-//CSS Init
+/* Initialisation of Generic Style */
 * {
     padding: 0;
     margin: 0;
@@ -21,10 +21,27 @@ $XSmall: 8px;
         background-color: $basic-blue;
         color: white;
     }
+    h1 {
+        font-size: $Large;
+        margin-bottom: 5px;
+    }
+    h2 {
+        font-size: $Large;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-weight: 700;
+        font-size: $Medium;
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-weight: 700;
+        font-size: $Medium;
+        margin-bottom: 6px;
+    }
 }
 
-//Header Part
-// Desktop
+/* Header Section - Desktop */
 header {
     display: flex;
     justify-content: space-between;
@@ -59,8 +76,7 @@ header {
     }
 }
 
-//Header Part
-// Mobile - less than 768px
+/* Header Section - Mobile (less than 768px) */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -100,17 +116,12 @@ header {
     }
 }
 
-//Accomodations Search Section
-// Desktop
+/* Accomodations Search Section - Desktop */
 section {
     margin: 0 3%;
     font-size: $Medium;
 }
 
-h1 {
-    font-size: $Large;
-    margin-bottom: 5px;
-}
 form {
     margin: 20px 0;
     fieldset {
@@ -170,7 +181,7 @@ form {
             }
         }
 
-        //Filters sub-section
+        /* Filters Search Sub-section - Desktop */
         .filterssearch {
             display: flex;
             align-items: baseline;
@@ -232,9 +243,8 @@ form {
     }
 }
 
-//Accomodations Search Section
-// Tablet
-@media /*(min-width: 769px) and */(max-width: 992px) {
+/* Accomodations Search Section - Tablet (less than 992px) */
+@media (max-width: 992px) {
     form {
         fieldset {
             .filterssearch {
@@ -257,26 +267,7 @@ form {
     }
 }
 
-.footer-panel {
-    display: flex;
-    i {
-        width: 20px;
-        height: 20px;
-        border: solid $darker-gray;
-        border-width: 1.5px;
-        border-radius: 30px;
-        padding: 2px 1px 1px 1px;
-        margin-right: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        color: $basic-blue;
-        font-size: $Small;
-    }
-}
-
-//Accomodations Search Section
-// Mobile
+/* Accomodations Search Section - Mobile (less than 768px) */
 @media (max-width: 768px) {
     section {
         margin: 20px 5% 0 5%;
@@ -306,16 +297,32 @@ form {
     }
 }
 
+/* Footer of Accomodations Search Section - Desktop */
+.footer-panel {
+    display: flex;
+    i {
+        width: 20px;
+        height: 20px;
+        border: solid $darker-gray;
+        border-width: 1.5px;
+        border-radius: 30px;
+        padding: 2px 1px 1px 1px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        color: $basic-blue;
+        font-size: $Small;
+    }
+}
+
+/* Accomodations List - Generic Styles - Desktop */
 .accomodations-popular {
     margin: 30px 3%;
     height: 600px;
     //height: 90%;
     display: flex;
     justify-content: space-between;
-    h2 {
-        font-size: $Large;
-        margin-bottom: 20px;
-    }
 
     .hostel-container {
         height: 80%;
@@ -324,11 +331,6 @@ form {
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: space-between;
-        h4 {
-            font-weight: 700;
-            font-size: $Medium;
-            margin-bottom: 6px;
-        }
         p {
             font-weight: 400;
             font-size: $Small;
@@ -364,7 +366,9 @@ form {
         }
     }
 
-    article {
+    /* Accomodations List - Main Styles - Desktop */
+
+    main {
         width: 69%;
         padding: 30px 2% 10px 2%;
         background: $basic-gray;
@@ -385,6 +389,8 @@ form {
             }
         }
     }
+
+    /* Accomodations List - Aside Styles - Desktop */
     aside {
         width: 28%;
         padding: 30px 2% 10px 2%;

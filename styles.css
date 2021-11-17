@@ -1,3 +1,5 @@
+/* Project Library - Colours - Sizes */
+/* Initialisation of Generic Style */
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +19,29 @@
   color: white;
 }
 
+* h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+* h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+* h3 {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+* h4 {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+/* Header Section - Desktop */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,6 +87,7 @@ header .logo {
   background-color: #0065fc;
 }
 
+/* Header Section - Mobile (less than 768px) */
 @media (max-width: 768px) {
   header {
     -webkit-box-orient: vertical;
@@ -88,7 +114,7 @@ header .logo {
     display: flex;
   }
   .navlinks li {
-    font-size: 24px;
+    font-size: 22px;
     list-style-type: none;
     display: inline-block;
     margin-right: 0;
@@ -104,14 +130,10 @@ header .logo {
   }
 }
 
+/* Accomodations Search Section - Desktop */
 section {
   margin: 0 3%;
   font-size: 17px;
-}
-
-h1 {
-  font-size: 24px;
-  margin-bottom: 5px;
 }
 
 form {
@@ -122,6 +144,7 @@ form fieldset {
   padding: 0;
   margin: 0;
   border: none;
+  /* Filters Search Sub-section - Desktop */
 }
 
 form fieldset legend {
@@ -284,6 +307,7 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
   cursor: pointer;
 }
 
+/* Accomodations Search Section - Tablet (less than 992px) */
 @media (max-width: 992px) {
   form fieldset .filterssearch {
     display: -webkit-box;
@@ -313,6 +337,30 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
   }
 }
 
+/* Accomodations Search Section - Mobile (less than 768px) */
+@media (max-width: 768px) {
+  section {
+    margin: 20px 5% 0 5%;
+  }
+  form fieldset .city-choice .search-btn {
+    width: 45px;
+    height: calc(100% + 2px);
+    margin-top: -1px;
+    border-radius: 14px;
+    margin-left: -20px;
+  }
+  form fieldset .city-choice .desktop-btn {
+    display: none;
+  }
+  form fieldset .city-choice .mobile-btn {
+    display: inline;
+  }
+  form fieldset .city-choice .mobile-btn i {
+    color: white;
+  }
+}
+
+/* Footer of Accomodations Search Section - Desktop */
 .footer-panel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,28 +388,7 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
   font-size: 12px;
 }
 
-@media (max-width: 768px) {
-  section {
-    margin: 20px 5% 0 5%;
-  }
-  form fieldset .city-choice .search-btn {
-    width: 45px;
-    height: calc(100% + 2px);
-    margin-top: -1px;
-    border-radius: 14px;
-    margin-left: -20px;
-  }
-  form fieldset .city-choice .desktop-btn {
-    display: none;
-  }
-  form fieldset .city-choice .mobile-btn {
-    display: inline;
-  }
-  form fieldset .city-choice .mobile-btn i {
-    color: white;
-  }
-}
-
+/* Accomodations List - Generic Styles - Desktop */
 .accomodations-popular {
   margin: 30px 3%;
   height: 600px;
@@ -371,11 +398,8 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.accomodations-popular h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  /* Accomodations List - Main Styles - Desktop */
+  /* Accomodations List - Aside Styles - Desktop */
 }
 
 .accomodations-popular .hostel-container {
@@ -391,12 +415,6 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
           justify-content: space-between;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-}
-
-.accomodations-popular .hostel-container h4 {
-  font-weight: 700;
-  font-size: 17px;
-  margin-bottom: 6px;
 }
 
 .accomodations-popular .hostel-container p {
@@ -449,19 +467,19 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
   background-position: 50% 50%;
 }
 
-.accomodations-popular article {
+.accomodations-popular main {
   width: 69%;
   padding: 30px 2% 10px 2%;
   background: #f2f2f2;
   border-radius: 14px;
 }
 
-.accomodations-popular article .hostel {
+.accomodations-popular main .hostel {
   width: 30%;
   height: 45%;
 }
 
-.accomodations-popular article .hostel .inner-hostel {
+.accomodations-popular main .hostel .inner-hostel {
   height: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,7 +488,7 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
       align-content: space-between;
 }
 
-.accomodations-popular article .hostel img {
+.accomodations-popular main .hostel img {
   width: 100%;
   height: 60%;
   border-radius: 14px 14px 0 0;
