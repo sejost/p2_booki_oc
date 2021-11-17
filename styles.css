@@ -41,6 +41,14 @@
   margin-bottom: 6px;
 }
 
+* a {
+  text-decoration: none;
+}
+
+* a:hover {
+  color: #0065fc;
+}
+
 /* Header Section - Desktop */
 header {
   display: -webkit-box;
@@ -56,7 +64,7 @@ header {
   font-size: 17px;
 }
 
-header .logo {
+header .logo img {
   width: 60%;
 }
 
@@ -72,14 +80,6 @@ header .logo {
   width: 100%;
   position: relative;
   bottom: 68px;
-}
-
-.navlinks li a {
-  text-decoration: none;
-}
-
-.navlinks li a:hover {
-  color: #0065fc;
 }
 
 .navlinks li a:hover + .first-select,
@@ -98,11 +98,9 @@ header .logo {
             box-sizing: border-box;
     margin: 10px 0 0 0;
   }
-  header .logo-a {
-    margin-bottom: 5%;
-  }
-  header .logo {
+  header .logo img {
     width: 75%;
+    margin-bottom: 5%;
     position: relative;
     left: 23%;
   }

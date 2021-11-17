@@ -39,6 +39,12 @@ $XSmall: 8px;
         font-size: $Medium;
         margin-bottom: 6px;
     }
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        color: $basic-blue;
+    }
 }
 
 /* Header Section - Desktop */
@@ -48,7 +54,7 @@ header {
     align-items: center;
     margin: 30px 3%;
     font-size: $Medium;
-    .logo {
+    .logo img {
         width: 60%;
     }
 }
@@ -64,12 +70,6 @@ header {
         position: relative;
         bottom: 68px;
     }
-    a {
-        text-decoration: none;
-    }
-    a:hover {
-        color: $basic-blue;
-    }
     a:hover + .first-select,
     a:hover + .second-select {
         background-color: $basic-blue;
@@ -82,11 +82,9 @@ header {
         flex-direction: column;
         box-sizing: border-box;
         margin: 10px 0 0 0;
-        .logo-a {
-            margin-bottom: 5%;
-        }
-        .logo {
+        .logo img {
             width: 75%;
+            margin-bottom: 5%;
             position: relative;
             left: 23%;
         }
