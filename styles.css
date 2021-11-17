@@ -27,8 +27,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px 4%;
-  font-size: 18px;
+  margin: 30px 3%;
+  font-size: 17px;
 }
 
 header .logo {
@@ -105,8 +105,8 @@ header .logo {
 }
 
 section {
-  margin: 0 4%;
-  font-size: 18px;
+  margin: 0 3%;
+  font-size: 17px;
 }
 
 h1 {
@@ -337,7 +337,7 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
       -ms-flex-align: baseline;
           align-items: baseline;
   color: #0065fc;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 @media (max-width: 768px) {
@@ -363,7 +363,7 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
 }
 
 .accomodations-popular {
-  margin: 30px 4%;
+  margin: 30px 3%;
   height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,20 +393,67 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
       align-content: space-between;
 }
 
+.accomodations-popular .hostel-container h4 {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.accomodations-popular .hostel-container p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
 .accomodations-popular .hostel-container .hostel {
   background: white;
   border-radius: 14px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.accomodations-popular .hostel-container .hostel .inner-hostel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.accomodations-popular .hostel-container .hostel .inner-hostel .text-card {
+  height: 80%;
+}
+
+.accomodations-popular .hostel-container .hostel .inner-hostel .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.accomodations-popular .hostel-container .hostel .inner-hostel .stars i {
+  color: #0065fc;
+  font-size: 12px;
+}
+
+.accomodations-popular .hostel-container .hostel .inner-hostel .stars i:last-child {
+  color: #d9d9d9;
+}
+
+.accomodations-popular .hostel-container .hostel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: 50% 50%;
 }
 
 .accomodations-popular article {
-  width: 67%;
-  padding: 30px 3% 10px 3%;
+  width: 69%;
+  padding: 30px 2% 10px 2%;
   background: #f2f2f2;
   border-radius: 14px;
-}
-
-.accomodations-popular article p {
-  font-weight: 600;
 }
 
 .accomodations-popular article .hostel {
@@ -414,23 +461,48 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
   height: 45%;
 }
 
-.accomodations-popular aside {
-  width: 30%;
-  padding: 30px 3% 10px 3%;
-  background: #f2f2f2;
-  border-radius: 14px;
-}
-
-.accomodations-popular aside .hostel-container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.accomodations-popular article .hostel .inner-hostel {
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-line-pack: justify;
       align-content: space-between;
 }
 
-.accomodations-popular aside .hostel-container .hostel {
+.accomodations-popular article .hostel img {
+  width: 100%;
+  height: 60%;
+  border-radius: 14px 14px 0 0;
+  padding: 0 0 5px 0;
+}
+
+.accomodations-popular aside {
+  width: 28%;
+  padding: 30px 2% 10px 2%;
+  background: #f2f2f2;
+  border-radius: 14px;
+}
+
+.accomodations-popular aside .hostel {
   width: 100%;
   height: 28%;
+}
+
+.accomodations-popular aside .hostel .inner-hostel {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.accomodations-popular aside .hostel img {
+  width: 50%;
+  height: 100%;
+  border-radius: 14px 0 0 14px;
+  padding: 0 10px 0 0;
 }
 /*# sourceMappingURL=styles.css.map */

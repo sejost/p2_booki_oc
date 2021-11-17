@@ -6,8 +6,8 @@ $basic-gray: #f2f2f2;
 $darker-gray: #d9d9d9;
 $XLarge: 32px;
 $Large: 24px;
-$Medium: 18px;
-$Small: 14px;
+$Medium: 17px;
+$Small: 12px;
 $XSmall: 8px;
 
 //CSS Init
@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 4%;
+    margin: 30px 3%;
     font-size: $Medium;
     .logo {
         width: 60%;
@@ -103,7 +103,7 @@ header {
 //Accomodations Search Section
 // Desktop
 section {
-    margin: 0 4%;
+    margin: 0 3%;
     font-size: $Medium;
 }
 
@@ -307,8 +307,9 @@ form {
 }
 
 .accomodations-popular {
-    margin: 30px 4%;
+    margin: 30px 3%;
     height: 600px;
+    //height: 90%;
     display: flex;
     justify-content: space-between;
     h2 {
@@ -323,35 +324,85 @@ form {
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: space-between;
+        h4 {
+            font-weight: 700;
+            font-size: $Medium;
+            margin-bottom: 6px;
+        }
+        p {
+            font-weight: 400;
+            font-size: $Small;
+        }
         .hostel {
             background: white;
             border-radius: 14px;
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            .inner-hostel {
+                display: flex;
+                flex-wrap: wrap;
+                .text-card {
+                    height: 80%;
+                }
+                .stars {
+                    display: flex;
+                    width: 100%;
+                    i {
+                        color: $basic-blue;
+                        font-size: $Small;
+                    }
+                    i:last-child {
+                        color: $darker-gray;
+                    }
+                }
+            }
+            img {
+                object-fit: cover;
+                background-position: 50% 50%;
+            }
         }
     }
+
     article {
-        width: 67%;
-        padding: 30px 3% 10px 3%;
+        width: 69%;
+        padding: 30px 2% 10px 2%;
         background: $basic-gray;
         border-radius: 14px;
-        p {
-            font-weight: 600;
-        }
         .hostel {
             width: 30%;
             height: 45%;
+            .inner-hostel {
+                height: 40%;
+                display: flex;
+                align-content: space-between;
+            }
+            img {
+                width: 100%;
+                height: 60%;
+                border-radius: 14px 14px 0 0;
+                padding: 0 0 5px 0;
+            }
         }
     }
     aside {
-        width: 30%;
-        padding: 30px 3% 10px 3%;
+        width: 28%;
+        padding: 30px 2% 10px 2%;
         background: $basic-gray;
         border-radius: 14px;
-        .hostel-container {
-            justify-content: space-between;
-            align-content: space-between;
-            .hostel {
-                width: 100%;
-                height: 28%;
+        .hostel {
+            width: 100%;
+            height: 28%;
+            .inner-hostel {
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+            }
+            img {
+                width: 50%;
+                height: 100%;
+                border-radius: 14px 0 0 14px;
+                padding: 0 10px 0 0;
             }
         }
     }
