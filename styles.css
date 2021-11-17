@@ -27,7 +27,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 4%;
+  margin: 30px 4%;
   font-size: 18px;
 }
 
@@ -70,10 +70,10 @@ header .logo {
             flex-direction: column;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 10px 0 0 0;
+    margin: 10px 0 0 0;
   }
   header .logo-a {
-    padding-bottom: 5%;
+    margin-bottom: 5%;
   }
   header .logo {
     width: 75%;
@@ -91,7 +91,7 @@ header .logo {
     font-size: 24px;
     list-style-type: none;
     display: inline-block;
-    padding-right: 0;
+    margin-right: 0;
     width: 50%;
   }
   .navlinks li div {
@@ -105,7 +105,7 @@ header .logo {
 }
 
 section {
-  padding: 0 4%;
+  margin: 0 4%;
   font-size: 18px;
 }
 
@@ -115,7 +115,7 @@ h1 {
 }
 
 form {
-  padding: 20px 0;
+  margin: 20px 0;
 }
 
 form fieldset {
@@ -143,7 +143,7 @@ form fieldset .city-choice {
 form fieldset .city-choice .icon {
   width: 45px;
   background: #f2f2f2;
-  border-radius: 10px 0 0 10px;
+  border-radius: 14px 0 0 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +179,7 @@ form fieldset .city-choice .search-zone:focus {
 form fieldset .city-choice .search-btn {
   width: 130px;
   border: none;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 14px 14px 0;
   background: #0065fc;
   color: white;
   cursor: pointer;
@@ -298,6 +298,7 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
     margin-bottom: 2%;
   }
   form fieldset .filterssearch .innerfilter {
+    margin: 0 5% 0 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -312,12 +313,43 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
   }
 }
 
+.footer-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-panel i {
+  width: 20px;
+  height: 20px;
+  border: solid #d9d9d9;
+  border-width: 1.5px;
+  border-radius: 30px;
+  padding: 2px 1px 1px 1px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  color: #0065fc;
+  font-size: 14px;
+}
+
 @media (max-width: 768px) {
   section {
-    padding: 20px 5% 0 5%;
+    margin: 20px 5% 0 5%;
   }
   form fieldset .city-choice .search-btn {
     width: 45px;
+    height: calc(100% + 2px);
+    margin-top: -1px;
+    border-radius: 14px;
+    margin-left: -20px;
   }
   form fieldset .city-choice .desktop-btn {
     display: none;
@@ -328,5 +360,77 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
   form fieldset .city-choice .mobile-btn i {
     color: white;
   }
+}
+
+.accomodations-popular {
+  margin: 30px 4%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.accomodations-popular h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.accomodations-popular .hostel-container {
+  height: 80%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.accomodations-popular .hostel-container .hostel {
+  background: white;
+  border-radius: 14px;
+}
+
+.accomodations-popular article {
+  width: 67%;
+  padding: 30px 3% 10px 3%;
+  background: #f2f2f2;
+  border-radius: 14px;
+}
+
+.accomodations-popular article p {
+  font-weight: 600;
+}
+
+.accomodations-popular article .hostel {
+  width: 30%;
+  height: 45%;
+}
+
+.accomodations-popular aside {
+  width: 30%;
+  padding: 30px 3% 10px 3%;
+  background: #f2f2f2;
+  border-radius: 14px;
+}
+
+.accomodations-popular aside .hostel-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.accomodations-popular aside .hostel-container .hostel {
+  width: 100%;
+  height: 28%;
 }
 /*# sourceMappingURL=styles.css.map */
