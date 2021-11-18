@@ -1,12 +1,16 @@
 /* Project Library - Colours - Sizes */
 /* Initialisation of Generic Style */
 * {
+  /* Global Part */
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  font-weight: 600;
   color: black;
+  /* Type text Part */
+  /* Containers Text Part */
 }
 
 * ::-moz-selection {
@@ -20,33 +24,96 @@
 }
 
 * h1 {
+  font-weight: 700;
   font-size: 22px;
   margin-bottom: 5px;
 }
 
 * h2 {
+  font-weight: 700;
   font-size: 22px;
   margin-bottom: 20px;
 }
 
 * h3 {
-  font-weight: 700;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 19px;
   margin-bottom: 10px;
 }
 
 * h4 {
-  font-weight: 700;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 16px;
   margin-bottom: 6px;
 }
 
 * a {
   text-decoration: none;
+  font-weight: 400;
 }
 
 * a:hover {
   color: #0065fc;
+}
+
+* p {
+  font-weight: 400;
+}
+
+* legend {
+  margin-right: 2%;
+}
+
+* section {
+  margin: 0 3%;
+}
+
+* input {
+  padding-left: 5px;
+  border: solid #f2f2f2;
+  border-width: 1px 0;
+}
+
+* input:focus {
+  outline: 1px solid #0065fc;
+}
+
+* .btn {
+  width: 120px;
+  border: none;
+  padding: 0;
+  border-radius: 0 14px 14px 0;
+  background: #0065fc;
+  color: white;
+  cursor: pointer;
+}
+
+* form {
+  margin: 20px 0;
+}
+
+* fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+* label {
+  margin: 0 10px 0px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+/* Generic Style - Tablets and thinner*/
+@media (max-width: 992px) {
+  section {
+    margin: 20px 5% 0 5%;
+  }
 }
 
 /* Header Section - Desktop */
@@ -61,7 +128,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin: 30px 3%;
-  font-size: 17px;
 }
 
 header .logo img {
@@ -112,7 +178,6 @@ header .logo img {
     display: flex;
   }
   .navlinks li {
-    font-size: 22px;
     list-style-type: none;
     display: inline-block;
     margin-right: 0;
@@ -120,36 +185,14 @@ header .logo img {
   }
   .navlinks li div {
     background: #f2f2f2;
-    height: 4px;
+    height: 3px;
     position: relative;
-    bottom: 0;
-    right: 0;
     top: 15px;
   }
 }
 
-/* Accomodations Search Section - Desktop */
-section {
-  margin: 0 3%;
-  font-size: 17px;
-}
-
-form {
-  margin: 20px 0;
-}
-
-form fieldset {
-  padding: 0;
-  margin: 0;
-  border: none;
-  /* Filters Search Sub-section - Desktop */
-}
-
-form fieldset legend {
-  font-weight: 600;
-}
-
-form fieldset .city-choice {
+/* Accomodations Search Section / Form Section - Desktop */
+.city-choice {
   height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,9 +204,10 @@ form fieldset .city-choice {
   margin-bottom: 30px;
 }
 
-form fieldset .city-choice .icon {
+.city-choice .icon {
   width: 45px;
   background: #f2f2f2;
+  color: black;
   border-radius: 14px 0 0 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,52 +218,60 @@ form fieldset .city-choice .icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-decoration: none;
 }
 
-form fieldset .city-choice .icon:hover {
+.city-choice .icon:hover {
   background: #0065fc;
   color: white;
 }
 
-form fieldset .city-choice input {
-  font-weight: 600;
-}
-
-form fieldset .city-choice .search-zone {
-  width: 220px;
+.city-choice .research-input {
   padding-left: 20px;
-  border: solid #f2f2f2;
-  border-width: 1px 0;
+  width: 220px;
 }
 
-form fieldset .city-choice .search-zone:focus {
-  outline: 1px solid #0065fc;
+.city-choice .research-btn {
+  width: 120px;
 }
 
-form fieldset .city-choice .search-btn {
-  width: 130px;
-  border: none;
-  border-radius: 0 14px 14px 0;
-  background: #0065fc;
-  color: white;
-  cursor: pointer;
-}
-
-form fieldset .city-choice .search-btn:hover {
+.city-choice .research-btn:hover {
   background: #f2f2f2;
   color: black;
 }
 
-form fieldset .city-choice .search-btn:hover i {
+.city-choice .research-btn:hover i {
   color: black;
 }
 
-form fieldset .city-choice button {
+.city-choice .mobile-btn {
   display: none;
 }
 
-form fieldset .filterssearch {
+/* Accomodations Search Section / Form Section - Mobile (less than 768px) */
+@media (max-width: 768px) {
+  .header-section {
+    margin-top: 10%;
+  }
+  .city-choice .research-btn {
+    width: 45px;
+    height: calc(100% + 2px);
+    margin-top: -1px;
+    border-radius: 14px;
+    margin-left: -20px;
+  }
+  .city-choice .desktop-btn {
+    display: none;
+  }
+  .city-choice .mobile-btn {
+    display: inline;
+  }
+  .city-choice .mobile-btn i {
+    color: white;
+  }
+}
+
+/* Filters Search Sub-section - Desktop */
+.search-filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,43 +280,39 @@ form fieldset .filterssearch {
           align-items: baseline;
 }
 
-form fieldset .filterssearch legend {
-  margin-right: 2%;
-}
-
-form fieldset .filterssearch .innerfilter {
+.search-filters .inner-filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-form fieldset .filterssearch .innerfilter input[type="checkbox"] {
+.search-filters .inner-filters input[type="checkbox"] {
   display: none;
   position: relative;
 }
 
-form fieldset .filterssearch .innerfilter .filter input[type="checkbox"]:hover + .innerlabel {
+.search-filters .inner-filters .filter input[type="checkbox"]:hover + .inner-label {
   background: #0065fc;
 }
 
-form fieldset .filterssearch .innerfilter .filter input[type="checkbox"]:hover + .innerlabel i {
+.search-filters .inner-filters .filter input[type="checkbox"]:hover + .inner-label i {
   background: #f2f2f2;
   color: black;
 }
 
-form fieldset .filterssearch .innerfilter .filter input[type="checkbox"]:hover + .innerlabel label {
+.search-filters .inner-filters .filter input[type="checkbox"]:hover + .inner-label label {
   color: white;
 }
 
-form fieldset .filterssearch .innerfilter .filter input[type="checkbox"]:checked ~ .innerlabel {
+.search-filters .inner-filters .filter input[type="checkbox"]:checked ~ .inner-label {
   background: #0065fc;
 }
 
-form fieldset .filterssearch .innerfilter .filter input[type="checkbox"]:checked ~ .innerlabel label {
+.search-filters .inner-filters .filter input[type="checkbox"]:checked ~ .inner-label label {
   color: white;
 }
 
-form fieldset .filterssearch .innerfilter .innerlabel {
+.search-filters .inner-filters .inner-label {
   height: 45px;
   border: solid #d9d9d9;
   border-width: 2px;
@@ -275,7 +323,7 @@ form fieldset .filterssearch .innerfilter .innerlabel {
   margin: 0 50px 0 0;
 }
 
-form fieldset .filterssearch .innerfilter .innerlabel i {
+.search-filters .inner-filters .inner-label i {
   background: #deebff;
   color: #0065fc;
   width: 45px;
@@ -293,21 +341,9 @@ form fieldset .filterssearch .innerfilter .innerlabel i {
           align-items: center;
 }
 
-form fieldset .filterssearch .innerfilter .innerlabel label {
-  margin: 0 10px 0px 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-}
-
 /* Accomodations Search Section - Tablet (less than 992px) */
 @media (max-width: 992px) {
-  form fieldset .filterssearch {
+  .search-filters {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -316,10 +352,10 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  form fieldset .filterssearch legend {
+  .search-filters legend {
     margin-bottom: 2%;
   }
-  form fieldset .filterssearch .innerfilter {
+  .search-filters .inner-filters {
     margin: 0 5% 0 5%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -330,31 +366,8 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  form fieldset .filterssearch .innerfilter .innerlabel {
+  .search-filters .inner-filters .inner-label {
     margin-bottom: 15px;
-  }
-}
-
-/* Accomodations Search Section - Mobile (less than 768px) */
-@media (max-width: 768px) {
-  section {
-    margin: 20px 5% 0 5%;
-  }
-  form fieldset .city-choice .search-btn {
-    width: 45px;
-    height: calc(100% + 2px);
-    margin-top: -1px;
-    border-radius: 14px;
-    margin-left: -20px;
-  }
-  form fieldset .city-choice .desktop-btn {
-    display: none;
-  }
-  form fieldset .city-choice .mobile-btn {
-    display: inline;
-  }
-  form fieldset .city-choice .mobile-btn i {
-    color: white;
   }
 }
 
@@ -386,8 +399,8 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
   font-size: 12px;
 }
 
-/* Accomodations List - Generic Styles - Desktop */
-.accomodations-popular {
+/* Second-Section - Accomodations List - Generic Styles - Desktop */
+.accomodations-list {
   margin: 30px 3%;
   height: 600px;
   display: -webkit-box;
@@ -396,11 +409,11 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /* Accomodations List - Main Styles - Desktop */
-  /* Accomodations List - Aside Styles - Desktop */
+  /* Second-Section - Accomodations List - Main Panel Styles - Desktop */
+  /* Second-Section - Accomodations List - Aside Panel Styles - Desktop */
 }
 
-.accomodations-popular .hostel-container {
+.accomodations-list .hostels-list {
   height: 80%;
   margin-bottom: 20px;
   display: -webkit-box;
@@ -415,12 +428,11 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
       align-content: space-between;
 }
 
-.accomodations-popular .hostel-container p {
-  font-weight: 400;
+.accomodations-list .hostels-list p {
   font-size: 12px;
 }
 
-.accomodations-popular .hostel-container .hostel {
+.accomodations-list .hostels-list .hostel {
   background: white;
   border-radius: 14px;
   padding: 5px;
@@ -431,53 +443,58 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
       flex-wrap: wrap;
 }
 
-.accomodations-popular .hostel-container .hostel .inner-hostel {
+.accomodations-list .hostels-list .hostel .inner-hostel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 2%;
 }
 
-.accomodations-popular .hostel-container .hostel .inner-hostel .text-card {
+.accomodations-list .hostels-list .hostel .inner-hostel .text-card {
   height: 80%;
 }
 
-.accomodations-popular .hostel-container .hostel .inner-hostel .stars {
+.accomodations-list .hostels-list .hostel .inner-hostel .stars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-.accomodations-popular .hostel-container .hostel .inner-hostel .stars i {
+.accomodations-list .hostels-list .hostel .inner-hostel .stars i {
   color: #0065fc;
   font-size: 12px;
 }
 
-.accomodations-popular .hostel-container .hostel .inner-hostel .stars i:last-child {
+.accomodations-list .hostels-list .hostel .inner-hostel .stars i:last-child {
   color: #d9d9d9;
 }
 
-.accomodations-popular .hostel-container .hostel img {
+.accomodations-list .hostels-list .hostel img {
   -o-object-fit: cover;
      object-fit: cover;
   background-position: 50% 50%;
 }
 
-.accomodations-popular main {
-  width: 69%;
+.accomodations-list main {
+  width: 66%;
   padding: 30px 2% 10px 2%;
   background: #f2f2f2;
   border-radius: 14px;
 }
 
-.accomodations-popular main .hostel {
+.accomodations-list main a {
+  font-weight: 600;
+}
+
+.accomodations-list main .hostel {
   width: 30%;
   height: 45%;
 }
 
-.accomodations-popular main .hostel .inner-hostel {
+.accomodations-list main .hostel .inner-hostel {
   height: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,26 +503,38 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
       align-content: space-between;
 }
 
-.accomodations-popular main .hostel img {
+.accomodations-list main .hostel img {
   width: 100%;
   height: 60%;
   border-radius: 14px 14px 0 0;
   padding: 0 0 5px 0;
 }
 
-.accomodations-popular aside {
-  width: 28%;
+.accomodations-list aside {
+  width: 32%;
   padding: 30px 2% 10px 2%;
   background: #f2f2f2;
   border-radius: 14px;
 }
 
-.accomodations-popular aside .hostel {
+.accomodations-list aside .header-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.accomodations-list aside .hostel {
   width: 100%;
   height: 28%;
 }
 
-.accomodations-popular aside .hostel .inner-hostel {
+.accomodations-list aside .hostel .inner-hostel {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,7 +544,7 @@ form fieldset .filterssearch .innerfilter .innerlabel label {
           justify-content: space-between;
 }
 
-.accomodations-popular aside .hostel img {
+.accomodations-list aside .hostel img {
   width: 50%;
   height: 100%;
   border-radius: 14px 0 0 14px;

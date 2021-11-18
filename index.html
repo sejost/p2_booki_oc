@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<!-- 
+    Head Part Including : 
+    - Google Fonts
+
+    - Normalyse.css that makes browsers render all elements more consistently and in line with modern standards 
+    - Styles.css/scss that makes the style of the page 
+    - Font Awesom Icons
+    - Favicons
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,16 +30,21 @@
 
 
 <body>
+
+    <!-- 
+        Header Part
+        Basic logo With 2 UL links
+    -->
     <header>
         <a class="logo" href="#"><img src="images/logo/Booki.png" href="#" alt="bookilog"></a>
         <nav>
             <ul class="navlinks">
                 <li>
-                    <a class="first-a" href="#">Hébergements</a>
+                    <a href="#">Hébergements</a>
                     <div class="first-select"></div>
                 </li>
                 <li>
-                    <a class="second-a" href="#">Activités</a>
+                    <a href="#">Activités</a>
                     <div class="second-select"></div>
                 </li>
             </ul>
@@ -39,35 +54,47 @@
         </div>
     </header>
 
-    <section class="accomodations search-panel">
-        <div class="header-panel">
+    <!-- 
+        First Section 
+        Accommodation Search Part 
+    -->
+    <section>
+        <!-- Header Section of the Reasearch - No Specific Styles -->
+        <div class="header-section">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
 
-        <form action="#" method="#" class="form-citysearch">
-            <!--Method : Post Action | : Send to the page-->
-            <fieldset class="fieldsearch">
+        <!-- 
+        Form part - Divided into 2 Fieldset
+        - Input to search
+        - Checkbox used as filters
+        -->
+        <form action="#" method="#">
+            <!--Need to add "Method : Post Action" | : Send to the page-->
 
+            <!-- First FieldSet - Focus on the localisation of the accomodations -->
+            <fieldset>
                 <div class="city-choice">
-                    <a href="#" class="icon fas fa-map-marker-alt"></a>
-                    <input class="search-zone" placeholder="Marseille, France" type="text" name="location" id="city"
+                    <a href="#" class="icon fas fa-map-marker-alt btn"></a>
+                    <input class="research-input" placeholder="Marseille, France" type="text" name="location" id="city"
                         required>
-                    <input class="search-btn desktop-btn" type="submit" value="Rechercher" name="location">
-                    <button class="search-btn mobile-btn" type="submit" name="location"><i
-                            class="fas fa-search"></i></button>
+                    <input class="research-btn desktop-btn btn" type="submit" value="Rechercher" name="location">
+                    <button class="research-btn mobile-btn btn" type="submit" name="location">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </div>
-
             </fieldset>
-            <fieldset class="fieldfilters">
-                <div class="filterssearch">
 
+            <!-- Second FieldSet - Focus on the filters concerning accomodations -->
+            <fieldset>
+                <div class="search-filters">
                     <legend>Filtres</legend>
-                    <div class="innerfilter">
+                    <div class="inner-filters">
 
                         <div class="filter">
                             <input type="checkbox" name="economical" id="cbx-economical">
-                            <div class="innerlabel">
+                            <div class="inner-label">
                                 <i class="fas fa-money-bill-wave"></i>
                                 <label for="cbx-economical" id="label-economical">Économique</label>
                             </div>
@@ -76,7 +103,7 @@
 
                         <div class="filter">
                             <input type="checkbox" name="family" id="cbx-family">
-                            <div class="innerlabel">
+                            <div class="inner-label">
                                 <i class="fas fa-child"></i>
                                 <label for="cbx-family">Familial</label>
                             </div>
@@ -85,7 +112,7 @@
 
                         <div class="filter">
                             <input type="checkbox" name="romantic" id="cbx-romantic">
-                            <div class="innerlabel">
+                            <div class="inner-label">
                                 <i class="fas fa-heart"></i>
                                 <label for="cbx-romantic">Romantique</label>
                             </div>
@@ -94,7 +121,7 @@
 
                         <div class="filter">
                             <input type="checkbox" name="animals" id="cbx-animals">
-                            <div class="innerlabel">
+                            <div class="inner-label">
                                 <i class="fas fa-dog"></i>
                                 <label for="cbx-animals">Animaux Autorisés</label>
                             </div>
@@ -105,16 +132,24 @@
             </fieldset>
         </form>
 
+        <!--  Footer of the Reasearch Section -->
         <div class="footer-panel">
             <i class="fas fa-info"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
 
-    <section class="accomodations-popular">
-        <main class="accomodation">
+    <!-- 
+        Second Section 
+        Researched and Most Popular Accomodations
+    -->
+    <section class="accomodations-list">
+
+        <!-- Main Panel - list filtered accomodations -->
+        <main>
+            <!-- First Card -->
             <h2>Hébergements à Marseille</h2>
-            <div class="hostel-container">
+            <div class="hostels-list">
                 <div class="hostel">
                     <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                         alt="Auberge La Cannebiere">
@@ -122,6 +157,7 @@
                         <div class="text-card">
                             <h4>Auberge La Cannebière</h4>
                             <p>Nuit à partir de <strong>25€</strong></p>
+
                         </div>
                         <div class="stars"><i class="fas fa-star">
                             </i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -129,6 +165,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Second Card -->
                 <div class="hostel">
                     <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                         alt="Auberge La Cannebiere">
@@ -143,6 +181,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Third Card -->
                 <div class="hostel">
                     <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                         alt="Auberge La Cannebiere">
@@ -157,6 +197,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Fourth Card -->
                 <div class="hostel">
                     <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                         alt="Auberge La Cannebiere">
@@ -171,6 +213,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Fith Card -->
                 <div class="hostel">
                     <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                         alt="Auberge La Cannebiere">
@@ -185,6 +229,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Sixth Card -->
                 <div class="hostel">
                     <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                         alt="Auberge La Cannebiere">
@@ -200,12 +246,18 @@
                     </div>
                 </div>
             </div>
-            <p href="#"><strong>Afficher plus</strong></p>
+
+            <!-- Panel's "Footer" -->
+            <a href="#">Afficher plus</a>
         </main>
 
-        <aside class="accomodation most-popular">
-            <h2>Les plus populaires</h2>
-            <div class="hostel-container">
+        <!-- Aside Panel - list most populars' accomodations -->
+        <aside>
+            <div class="header-aside">
+                <h2>Les plus populaires</h2> <i class="fas fa-chart-line"></i>
+            </div>
+            <!-- First Card -->
+            <div class="hostels-list">
                 <div class="hostel">
                     <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                         alt="Auberge La Cannebiere">
@@ -218,6 +270,8 @@
                                 class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                     </div>
                 </div>
+
+                <!-- Second Card -->
                 <div class="hostel">
                     <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                         alt="Auberge La Cannebiere">
@@ -230,6 +284,8 @@
                                 class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                     </div>
                 </div>
+
+                <!-- Third Card -->
                 <div class="hostel">
                     <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                         alt="Auberge La Cannebiere">
@@ -245,6 +301,8 @@
             </div>
         </aside>
     </section>
+
+
     <section class="activities">
 
     </section>

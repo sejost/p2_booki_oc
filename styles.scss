@@ -6,44 +6,103 @@ $basic-gray: #f2f2f2;
 $darker-gray: #d9d9d9;
 $XLarge: 26px;
 $Large: 22px;
-$Medium: 17px;
+$MedLarge: 19px;
+$Medium: 16px;
 $Small: 12px;
 $XSmall: 8px;
+$FLight: 400;
+$FMedium: 600;
+$FHeavy: 700;
+$FBolder: 800;
 
 /* Initialisation of Generic Style */
 * {
+    /* Global Part */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
+    font-weight: $FMedium;
     color: black;
     ::selection {
         background-color: $basic-blue;
         color: white;
     }
+    /* Type text Part */
     h1 {
+        font-weight: $FHeavy;
         font-size: $Large;
         margin-bottom: 5px;
     }
     h2 {
+        font-weight: $FHeavy;
         font-size: $Large;
         margin-bottom: 20px;
     }
     h3 {
-        font-weight: 700;
-        font-size: $Medium;
+        font-weight: $FMedium;
+        font-size: $MedLarge;
         margin-bottom: 10px;
     }
     h4 {
-        font-weight: 700;
+        font-weight: $FMedium;
         font-size: $Medium;
         margin-bottom: 6px;
     }
     a {
         text-decoration: none;
+        font-weight: $FLight;
     }
     a:hover {
         color: $basic-blue;
+    }
+    p {
+        font-weight: $FLight;
+    }
+    legend {
+        margin-right: 2%;
+    }
+    /* Containers Text Part */
+    section {
+        margin: 0 3%;
+    }
+    input {
+        padding-left: 5px;
+        border: solid $basic-gray;
+        border-width: 1px 0;
+    }
+    input:focus {
+        outline: 1px solid $basic-blue;
+    }
+    .btn {
+        width: 120px;
+        border: none;
+        padding: 0;
+        border-radius: 0 14px 14px 0;
+        background: $basic-blue;
+        color: white;
+        cursor: pointer;
+    }
+    form {
+        margin: 20px 0;
+    }
+    fieldset {
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    label {
+        margin: 0 10px 0px 10px;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+/* Generic Style - Tablets and thinner*/
+@media (max-width: 992px) {
+    section {
+        margin: 20px 5% 0 5%;
     }
 }
 
@@ -53,7 +112,6 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 30px 3%;
-    font-size: $Medium;
     .logo img {
         width: 60%;
     }
@@ -97,145 +155,127 @@ header {
     }
 
     .navlinks li {
-        font-size: $Large;
         list-style-type: none;
         display: inline-block;
         margin-right: 0;
-
         width: 50%;
         div {
             background: $basic-gray;
-            height: 4px;
+            height: 3px;
             position: relative;
-            bottom: 0;
-            right: 0;
             top: 15px;
         }
     }
 }
 
-/* Accomodations Search Section - Desktop */
-section {
-    margin: 0 3%;
-    font-size: $Medium;
+/* Accomodations Search Section / Form Section - Desktop */
+
+.city-choice {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    .icon {
+        width: 45px;
+        background: $basic-gray;
+        color: black;
+        border-radius: 14px 0 0 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon:hover {
+        background: $basic-blue;
+        color: white;
+    }
+    .research-input {
+        padding-left: 20px;
+        width: 220px;
+    }
+    .research-btn {
+        width: 120px;
+    }
+    .research-btn:hover {
+        background: $basic-gray;
+        color: black;
+        i {
+            color: black;
+        }
+    }
+    .mobile-btn {
+        display: none;
+    }
 }
 
-form {
-    margin: 20px 0;
-    fieldset {
-        padding: 0;
-        margin: 0;
-        border: none;
-        legend {
-            font-weight: 600;
+/* Accomodations Search Section / Form Section - Mobile (less than 768px) */
+@media (max-width: 768px) {
+    .header-section {
+        margin-top: 10%;
+    }
+    .city-choice {
+        .research-btn {
+            width: 45px;
+            height: calc(100% + 2px);
+            margin-top: -1px;
+            border-radius: 14px;
+            margin-left: -20px;
         }
-        .city-choice {
-            height: 45px;
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 30px;
-            .icon {
-                width: 45px;
-                background: $basic-gray;
-                border-radius: 14px 0 0 14px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-            }
-            .icon:hover {
-                background: $basic-blue;
+        .desktop-btn {
+            display: none;
+        }
+        .mobile-btn {
+            display: inline;
+            i {
                 color: white;
             }
-            input {
-                font-weight: 600;
-            }
-            .search-zone {
-                width: 220px;
-                padding-left: 20px;
-                border: solid $basic-gray;
-                border-width: 1px 0;
-            }
-            .search-zone:focus {
-                outline: 1px solid $basic-blue;
-            }
-            .search-btn {
-                width: 130px;
-                border: none;
-                border-radius: 0 14px 14px 0;
+        }
+    }
+}
+/* Filters Search Sub-section - Desktop */
+.search-filters {
+    display: flex;
+    align-items: baseline;
+    .inner-filters {
+        display: flex;
+        input[type="checkbox"] {
+            display: none;
+            position: relative;
+        }
+        .filter {
+            input[type="checkbox"]:hover + .inner-label {
                 background: $basic-blue;
-                color: white;
-                cursor: pointer;
-            }
-            .search-btn:hover {
-                background: $basic-gray;
-                color: black;
                 i {
+                    background: $basic-gray;
                     color: black;
                 }
+                label {
+                    color: white;
+                }
             }
-            button {
-                display: none;
+            input[type="checkbox"]:checked ~ .inner-label {
+                background: $basic-blue;
+                label {
+                    color: white;
+                }
             }
         }
-
-        /* Filters Search Sub-section - Desktop */
-        .filterssearch {
+        .inner-label {
+            height: 45px;
+            border: solid $darker-gray;
+            border-width: 2px;
+            border-radius: 0px 30px 30px 0px;
             display: flex;
-            align-items: baseline;
-            legend {
-                margin-right: 2%;
-            }
-            .innerfilter {
+            margin: 0 50px 0 0;
+            i {
+                background: $light-blue;
+                color: $basic-blue;
+                width: 45px;
+                height: calc(100% + 6px);
+                border-radius: 30px;
+                margin: -3px 0 0 -18px;
                 display: flex;
-                input[type="checkbox"] {
-                    display: none;
-                    position: relative;
-                }
-                .filter {
-                    input[type="checkbox"]:hover + .innerlabel {
-                        background: $basic-blue;
-                        i {
-                            background: $basic-gray;
-                            color: black;
-                        }
-                        label {
-                            color: white;
-                        }
-                    }
-                    input[type="checkbox"]:checked ~ .innerlabel {
-                        background: $basic-blue;
-                        label {
-                            color: white;
-                        }
-                    }
-                }
-                .innerlabel {
-                    height: 45px;
-                    border: solid $darker-gray;
-                    border-width: 2px;
-                    border-radius: 0px 30px 30px 0px;
-                    display: flex;
-                    margin: 0 50px 0 0;
-                    i {
-                        background: $light-blue;
-                        color: $basic-blue;
-                        width: 45px;
-                        height: calc(100% + 6px);
-                        border-radius: 30px;
-                        margin: -3px 0 0 -18px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    label {
-                        margin: 0 10px 0px 10px;
-                        align-items: center;
-                        font-weight: 600;
-                        display: flex;
-                        cursor: pointer;
-                    }
-                }
+                justify-content: center;
+                align-items: center;
             }
         }
     }
@@ -243,53 +283,19 @@ form {
 
 /* Accomodations Search Section - Tablet (less than 992px) */
 @media (max-width: 992px) {
-    form {
-        fieldset {
-            .filterssearch {
-                display: flex;
-                flex-direction: column;
-                legend {
-                    margin-bottom: 2%;
-                }
-                .innerfilter {
-                    margin: 0 5% 0 5%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: flex-start;
-                    .innerlabel {
-                        margin-bottom: 15px;
-                    }
-                }
-            }
+    .search-filters {
+        display: flex;
+        flex-direction: column;
+        legend {
+            margin-bottom: 2%;
         }
-    }
-}
-
-/* Accomodations Search Section - Mobile (less than 768px) */
-@media (max-width: 768px) {
-    section {
-        margin: 20px 5% 0 5%;
-    }
-
-    form {
-        fieldset {
-            .city-choice {
-                .search-btn {
-                    width: 45px;
-                    height: calc(100% + 2px);
-                    margin-top: -1px;
-                    border-radius: 14px;
-                    margin-left: -20px;
-                }
-                .desktop-btn {
-                    display: none;
-                }
-                .mobile-btn {
-                    display: inline;
-                    i {
-                        color: white;
-                    }
-                }
+        .inner-filters {
+            margin: 0 5% 0 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .inner-label {
+                margin-bottom: 15px;
             }
         }
     }
@@ -314,15 +320,15 @@ form {
     }
 }
 
-/* Accomodations List - Generic Styles - Desktop */
-.accomodations-popular {
+/* Second-Section - Accomodations List - Generic Styles - Desktop */
+.accomodations-list {
     margin: 30px 3%;
     height: 600px;
     //height: 90%;
     display: flex;
     justify-content: space-between;
 
-    .hostel-container {
+    .hostels-list {
         height: 80%;
         margin-bottom: 20px;
         display: flex;
@@ -330,7 +336,6 @@ form {
         justify-content: space-between;
         align-content: space-between;
         p {
-            font-weight: 400;
             font-size: $Small;
         }
         .hostel {
@@ -342,6 +347,7 @@ form {
             .inner-hostel {
                 display: flex;
                 flex-wrap: wrap;
+                padding: 2%;
                 .text-card {
                     height: 80%;
                 }
@@ -364,13 +370,15 @@ form {
         }
     }
 
-    /* Accomodations List - Main Styles - Desktop */
-
+    /* Second-Section - Accomodations List - Main Panel Styles - Desktop */
     main {
-        width: 69%;
+        width: 66%;
         padding: 30px 2% 10px 2%;
         background: $basic-gray;
         border-radius: 14px;
+        a {
+            font-weight: $FMedium;
+        }
         .hostel {
             width: 30%;
             height: 45%;
@@ -388,12 +396,17 @@ form {
         }
     }
 
-    /* Accomodations List - Aside Styles - Desktop */
+    /* Second-Section - Accomodations List - Aside Panel Styles - Desktop */
     aside {
-        width: 28%;
+        width: 32%;
         padding: 30px 2% 10px 2%;
         background: $basic-gray;
         border-radius: 14px;
+        .header-aside {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
         .hostel {
             width: 100%;
             height: 28%;
