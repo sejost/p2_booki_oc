@@ -1,4 +1,4 @@
-/* Project Library - Colours - Sizes */
+/* Project Library - Colours - Sizes - Stars Rating*/
 
 $basic-blue: #0065fc;
 $light-blue: #deebff;
@@ -15,6 +15,30 @@ $FMedium: 600;
 $FHeavy: 700;
 $FBolder: 800;
 
+@mixin stars-rating {
+    .three-stars {
+        i {
+            color: $basic-blue;
+        }
+        i:nth-child(n + 4) {
+            color: $darker-gray;
+        }
+    }
+    .four-stars {
+        i {
+            color: $basic-blue;
+        }
+        i:nth-child(n + 5) {
+            color: $darker-gray;
+        }
+    }
+    .five-stars {
+        i {
+            color: $basic-blue;
+        }
+    }
+}
+
 /* Initialisation of Generic Style */
 * {
     /* Global Part */
@@ -24,6 +48,7 @@ $FBolder: 800;
     font-family: "Raleway", sans-serif;
     font-weight: $FMedium;
     color: black;
+    transition: all 0.1s ease-in-out;
     ::selection {
         background-color: $basic-blue;
         color: white;
@@ -114,6 +139,9 @@ header {
     margin: 30px 3%;
     .logo img {
         width: 60%;
+    }
+    .logo:hover {
+        transform: scale(1.04);
     }
 }
 
@@ -341,7 +369,7 @@ header {
         .hostel {
             background: white;
             border-radius: 14px;
-            padding: 5px;
+            padding: 4px;
             display: flex;
             flex-wrap: wrap;
             .inner-hostel {
@@ -355,17 +383,24 @@ header {
                     display: flex;
                     width: 100%;
                     i {
-                        color: $basic-blue;
                         font-size: $Small;
                     }
-                    i:last-child {
-                        color: $darker-gray;
-                    }
                 }
+                @include stars-rating();
             }
             img {
                 object-fit: cover;
                 background-position: 50% 50%;
+            }
+        }
+        .hostel:hover {
+            transform: scale(1.08);
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+            h4,
+            p,
+            strong {
+                color: $basic-blue;
             }
         }
     }

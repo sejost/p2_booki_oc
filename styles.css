@@ -1,4 +1,4 @@
-/* Project Library - Colours - Sizes */
+/* Project Library - Colours - Sizes - Stars Rating*/
 /* Initialisation of Generic Style */
 * {
   /* Global Part */
@@ -9,6 +9,8 @@
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: black;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   /* Type text Part */
   /* Containers Text Part */
 }
@@ -132,6 +134,11 @@ header {
 
 header .logo img {
   width: 60%;
+}
+
+header .logo:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .navlinks li {
@@ -435,7 +442,7 @@ header .logo img {
 .accomodations-list .hostels-list .hostel {
   background: white;
   border-radius: 14px;
-  padding: 5px;
+  padding: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,18 +471,47 @@ header .logo img {
 }
 
 .accomodations-list .hostels-list .hostel .inner-hostel .stars i {
-  color: #0065fc;
   font-size: 12px;
 }
 
-.accomodations-list .hostels-list .hostel .inner-hostel .stars i:last-child {
+.accomodations-list .hostels-list .hostel .inner-hostel .three-stars i {
+  color: #0065fc;
+}
+
+.accomodations-list .hostels-list .hostel .inner-hostel .three-stars i:nth-child(n + 4) {
   color: #d9d9d9;
+}
+
+.accomodations-list .hostels-list .hostel .inner-hostel .four-stars i {
+  color: #0065fc;
+}
+
+.accomodations-list .hostels-list .hostel .inner-hostel .four-stars i:nth-child(n + 5) {
+  color: #d9d9d9;
+}
+
+.accomodations-list .hostels-list .hostel .inner-hostel .five-stars i {
+  color: #0065fc;
 }
 
 .accomodations-list .hostels-list .hostel img {
   -o-object-fit: cover;
      object-fit: cover;
   background-position: 50% 50%;
+}
+
+.accomodations-list .hostels-list .hostel:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.accomodations-list .hostels-list .hostel:hover h4,
+.accomodations-list .hostels-list .hostel:hover p,
+.accomodations-list .hostels-list .hostel:hover strong {
+  color: #0065fc;
 }
 
 .accomodations-list main {
