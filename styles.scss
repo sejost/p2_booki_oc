@@ -88,9 +88,6 @@ $FBolder: 800;
         margin-right: 2%;
     }
     /* Containers Text Part */
-    section {
-        margin: 0 3%;
-    }
     input {
         padding-left: 5px;
         border: solid $basic-gray;
@@ -124,19 +121,12 @@ $FBolder: 800;
     }
 }
 
-/* Generic Style - Tablets and thinner*/
-@media (max-width: 992px) {
-    section {
-        margin: 20px 4% 0 4%;
-    }
-}
-
 /* Header Section - Desktop */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 4%;
+    margin: 30px 3% 30px 4%;
     .logo img {
         width: 60%;
     }
@@ -197,64 +187,75 @@ header {
 }
 
 /* Accomodations Search Section / Form Section - Desktop */
+.form-choice {
+    margin: 30px 3% 30px 3%;
 
-.city-choice {
-    height: 45px;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-    .icon {
-        width: 45px;
-        background: $basic-gray;
-        color: black;
-        border-radius: 14px 0 0 14px;
+    .city-choice {
+        height: 45px;
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .icon:hover {
-        background: $basic-blue;
-        color: white;
-    }
-    .research-input {
-        padding-left: 20px;
-        width: 220px;
-    }
-    .research-btn {
-        width: 120px;
-    }
-    .research-btn:hover {
-        background: $basic-gray;
-        color: black;
-        i {
+        flex-direction: row;
+        margin-bottom: 30px;
+        .icon {
+            width: 45px;
+            background: $basic-gray;
             color: black;
+            border-radius: 14px 0 0 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon:hover {
+            background: $basic-blue;
+            color: white;
+        }
+        .research-input {
+            padding-left: 20px;
+            width: 220px;
+        }
+        .research-btn {
+            width: 120px;
+        }
+        .research-btn:hover {
+            background: $basic-gray;
+            color: black;
+            i {
+                color: black;
+            }
+        }
+        .mobile-btn {
+            display: none;
         }
     }
-    .mobile-btn {
-        display: none;
+}
+
+/* Accomodations Search Section / Form Section - Tablet ( less than 992px) */
+
+@media (max-width: 992px) {
+    .form-choice {
+        margin: 15px 2% 5% 15px;
     }
 }
 
 /* Accomodations Search Section / Form Section - Mobile (less than 768px) */
 @media (max-width: 768px) {
-    .header-section {
-        margin-top: 10%;
-    }
-    .city-choice {
-        .research-btn {
-            width: 45px;
-            height: calc(100% + 2px);
-            margin-top: -1px;
-            border-radius: 14px;
-            margin-left: -20px;
-        }
-        .desktop-btn {
-            display: none;
-        }
-        .mobile-btn {
-            display: inline;
-            i {
-                color: white;
+    .form-choice {
+        margin: 40px 5% 5% 10px;
+        .city-choice {
+            .research-btn {
+                width: 45px;
+                height: calc(100% + 2px);
+                margin-top: -1px;
+                border-radius: 14px;
+                margin-left: -20px;
+            }
+            .desktop-btn {
+                display: none;
+            }
+            .mobile-btn {
+                display: inline;
+                i {
+                    color: white;
+                }
             }
         }
     }
@@ -315,13 +316,14 @@ header {
         display: flex;
         flex-direction: column;
         legend {
-            margin-bottom: 2%;
+            margin-bottom: 15px;
         }
         .inner-filters {
             margin: 0 5% 0 5%;
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
+            //align-content: space-between;
             .inner-label {
                 margin-bottom: 15px;
             }
@@ -350,7 +352,7 @@ header {
 
 /* Second-Section - Accomodations List - Generic Styles - Desktop */
 .accomodations-list {
-    margin: 30px 4%;
+    margin: 30px 2.5%;
     height: 600px;
     display: flex;
     justify-content: space-between;
@@ -475,7 +477,7 @@ header {
             width: 100%;
             height: 600px;
             background: white;
-            padding: 30px 4% 10px 4%;
+            padding: 30px 2% 10px 2%;
         }
 
         /* Second-Section - Accomodations List - Aside Panel Styles - Tablet */
@@ -483,7 +485,7 @@ header {
             width: 100%;
             height: 300px;
             border-radius: 0;
-            padding: 30px 4% 10px 4%;
+            padding: 30px 2% 10px 2%;
             .hostel {
                 width: 30%;
                 height: 100%;
@@ -497,6 +499,21 @@ header {
                     padding: 0 0 5px 0;
                 }
             }
+        }
+    }
+}
+
+/* Second-Section - Accomodations List - Generic Styles - Mobile */
+@media (max-width: 768px) {
+    .accomodations-list {
+        /* Second-Section - Accomodations List - Main Panel Styles - Mobile */
+        main {
+            padding: 30px 5% 10px 5%;
+        }
+
+        /* Second-Section - Accomodations List - Aside Panel Styles - Mobile */
+        aside {
+            padding: 30px 5% 10px 5%;
         }
     }
 }

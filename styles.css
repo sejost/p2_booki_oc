@@ -66,10 +66,6 @@
   margin-right: 2%;
 }
 
-* section {
-  margin: 0 3%;
-}
-
 * input {
   padding-left: 5px;
   border: solid #f2f2f2;
@@ -111,13 +107,6 @@
   cursor: pointer;
 }
 
-/* Generic Style - Tablets and thinner*/
-@media (max-width: 992px) {
-  section {
-    margin: 20px 4% 0 4%;
-  }
-}
-
 /* Header Section - Desktop */
 header {
   display: -webkit-box;
@@ -129,7 +118,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px 4%;
+  margin: 30px 3% 30px 4%;
 }
 
 header .logo img {
@@ -199,7 +188,11 @@ header .logo:hover {
 }
 
 /* Accomodations Search Section / Form Section - Desktop */
-.city-choice {
+.form-choice {
+  margin: 30px 3% 30px 3%;
+}
+
+.form-choice .city-choice {
   height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,7 +204,7 @@ header .logo:hover {
   margin-bottom: 30px;
 }
 
-.city-choice .icon {
+.form-choice .city-choice .icon {
   width: 45px;
   background: #f2f2f2;
   color: black;
@@ -227,52 +220,59 @@ header .logo:hover {
           justify-content: center;
 }
 
-.city-choice .icon:hover {
+.form-choice .city-choice .icon:hover {
   background: #0065fc;
   color: white;
 }
 
-.city-choice .research-input {
+.form-choice .city-choice .research-input {
   padding-left: 20px;
   width: 220px;
 }
 
-.city-choice .research-btn {
+.form-choice .city-choice .research-btn {
   width: 120px;
 }
 
-.city-choice .research-btn:hover {
+.form-choice .city-choice .research-btn:hover {
   background: #f2f2f2;
   color: black;
 }
 
-.city-choice .research-btn:hover i {
+.form-choice .city-choice .research-btn:hover i {
   color: black;
 }
 
-.city-choice .mobile-btn {
+.form-choice .city-choice .mobile-btn {
   display: none;
+}
+
+/* Accomodations Search Section / Form Section - Tablet ( less than 992px) */
+@media (max-width: 992px) {
+  .form-choice {
+    margin: 15px 2% 5% 15px;
+  }
 }
 
 /* Accomodations Search Section / Form Section - Mobile (less than 768px) */
 @media (max-width: 768px) {
-  .header-section {
-    margin-top: 10%;
+  .form-choice {
+    margin: 40px 5% 5% 10px;
   }
-  .city-choice .research-btn {
+  .form-choice .city-choice .research-btn {
     width: 45px;
     height: calc(100% + 2px);
     margin-top: -1px;
     border-radius: 14px;
     margin-left: -20px;
   }
-  .city-choice .desktop-btn {
+  .form-choice .city-choice .desktop-btn {
     display: none;
   }
-  .city-choice .mobile-btn {
+  .form-choice .city-choice .mobile-btn {
     display: inline;
   }
-  .city-choice .mobile-btn i {
+  .form-choice .city-choice .mobile-btn i {
     color: white;
   }
 }
@@ -360,7 +360,7 @@ header .logo:hover {
             flex-direction: column;
   }
   .search-filters legend {
-    margin-bottom: 2%;
+    margin-bottom: 15px;
   }
   .search-filters .inner-filters {
     margin: 0 5% 0 5%;
@@ -408,7 +408,7 @@ header .logo:hover {
 
 /* Second-Section - Accomodations List - Generic Styles - Desktop */
 .accomodations-list {
-  margin: 30px 4%;
+  margin: 30px 2.5%;
   height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,13 +606,13 @@ header .logo:hover {
     width: 100%;
     height: 600px;
     background: white;
-    padding: 30px 4% 10px 4%;
+    padding: 30px 2% 10px 2%;
   }
   .accomodations-list aside {
     width: 100%;
     height: 300px;
     border-radius: 0;
-    padding: 30px 4% 10px 4%;
+    padding: 30px 2% 10px 2%;
   }
   .accomodations-list aside .hostel {
     width: 30%;
@@ -626,6 +626,20 @@ header .logo:hover {
     height: 60%;
     border-radius: 14px 14px 0 0;
     padding: 0 0 5px 0;
+  }
+}
+
+/* Second-Section - Accomodations List - Generic Styles - Mobile */
+@media (max-width: 768px) {
+  .accomodations-list {
+    /* Second-Section - Accomodations List - Main Panel Styles - Mobile */
+    /* Second-Section - Accomodations List - Aside Panel Styles - Mobile */
+  }
+  .accomodations-list main {
+    padding: 30px 5% 10px 5%;
+  }
+  .accomodations-list aside {
+    padding: 30px 5% 10px 5%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
