@@ -448,6 +448,8 @@ header .logo:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .accomodations-list .hostels-list .hostel .inner-hostel {
