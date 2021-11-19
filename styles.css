@@ -114,7 +114,7 @@
 /* Generic Style - Tablets and thinner*/
 @media (max-width: 992px) {
   section {
-    margin: 20px 5% 0 5%;
+    margin: 20px 4% 0 4%;
   }
 }
 
@@ -129,7 +129,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px 3%;
+  margin: 30px 4%;
 }
 
 header .logo img {
@@ -408,7 +408,7 @@ header .logo:hover {
 
 /* Second-Section - Accomodations List - Generic Styles - Desktop */
 .accomodations-list {
-  margin: 30px 3%;
+  margin: 30px 4%;
   height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,5 +585,47 @@ header .logo:hover {
   height: 100%;
   border-radius: 14px 0 0 14px;
   padding: 0 10px 0 0;
+}
+
+/* Second-Section - Accomodations List - Generic Styles - Tablet */
+@media (max-width: 992px) {
+  .accomodations-list {
+    margin: 30px 0;
+    width: 100%;
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    /* Second-Section - Accomodations List - Main Panel Styles - Tablet */
+    /* Second-Section - Accomodations List - Aside Panel Styles - Tablet */
+  }
+  .accomodations-list main {
+    width: 100%;
+    height: 600px;
+    background: white;
+    padding: 30px 4% 10px 4%;
+  }
+  .accomodations-list aside {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    padding: 30px 4% 10px 4%;
+  }
+  .accomodations-list aside .hostel {
+    width: 30%;
+    height: 100%;
+  }
+  .accomodations-list aside .hostel .inner-hostel {
+    width: 100%;
+  }
+  .accomodations-list aside .hostel img {
+    width: 100%;
+    height: 60%;
+    border-radius: 14px 14px 0 0;
+    padding: 0 0 5px 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
