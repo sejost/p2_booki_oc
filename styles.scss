@@ -377,7 +377,7 @@ header {
             .inner-hostel {
                 display: flex;
                 flex-wrap: wrap;
-                padding: 2%;
+                padding: 3%;
                 .text-card {
                     height: 80%;
                 }
@@ -428,7 +428,6 @@ header {
                 width: 100%;
                 height: 60%;
                 border-radius: 14px 14px 0 0;
-                padding: 0 0 5px 0;
             }
         }
     }
@@ -456,7 +455,6 @@ header {
                 width: 50%;
                 height: 100%;
                 border-radius: 14px 0 0 14px;
-                padding: 0 10px 0 0;
             }
         }
     }
@@ -468,8 +466,6 @@ header {
         margin: 30px 0;
         width: 100%;
         height: auto;
-        //display: flex;
-        //justify-content: space-between;
         flex-wrap: wrap;
         flex-direction: column-reverse;
 
@@ -478,7 +474,7 @@ header {
             width: 100%;
             height: 600px;
             background: white;
-            padding: 30px 2% 10px 2%;
+            padding: 20px 2% 10px 2%;
         }
 
         /* Second-Section - Accomodations List - Aside Panel Styles - Tablet */
@@ -486,7 +482,7 @@ header {
             width: 100%;
             height: 300px;
             border-radius: 0;
-            padding: 30px 2% 10px 2%;
+            padding: 20px 2% 10px 2%;
             .hostel {
                 width: 30%;
                 height: 100%;
@@ -497,7 +493,6 @@ header {
                     width: 100%;
                     height: 60%;
                     border-radius: 14px 14px 0 0;
-                    padding: 0 0 5px 0;
                 }
             }
         }
@@ -507,14 +502,50 @@ header {
 /* Second-Section - Accomodations List - Generic Styles - Mobile */
 @media (max-width: 768px) {
     .accomodations-list {
+        height: auto;
         /* Second-Section - Accomodations List - Main Panel Styles - Mobile */
         main {
-            padding: 30px 5% 10px 5%;
+            padding: 10px 5% 10px 5%;
+            height: 1400px;
+            .hostels-list {
+                //height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+                .hostel {
+                    width: 100%;
+                    height: 16%;
+                    margin-bottom: 2%;
+                    .inner-hostel {
+                        height: 50%;
+                    }
+                    img {
+                        height: 50%;
+                    }
+                }
+            }
         }
 
         /* Second-Section - Accomodations List - Aside Panel Styles - Mobile */
         aside {
-            padding: 30px 5% 10px 5%;
+            padding: 10px 5% 10px 5%;
+            height: 550px;
+            .hostels-list {
+                flex-direction: column;
+                flex-wrap: nowrap;
+                .hostel {
+                    width: 100%;
+                    height: 31%;
+                    .inner-hostel {
+                        width: 50%;
+                    }
+                    img {
+                        width: 50%;
+                        height: 100%;
+                        border-radius: 14px 0 0 14px;
+                    }
+                }
+            }
         }
     }
 }

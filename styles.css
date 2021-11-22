@@ -458,7 +458,7 @@ header .logo:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 2%;
+  padding: 3%;
 }
 
 .accomodations-list .hostels-list .hostel .inner-hostel .text-card {
@@ -545,7 +545,6 @@ header .logo:hover {
   width: 100%;
   height: 60%;
   border-radius: 14px 14px 0 0;
-  padding: 0 0 5px 0;
 }
 
 .accomodations-list aside {
@@ -586,7 +585,6 @@ header .logo:hover {
   width: 50%;
   height: 100%;
   border-radius: 14px 0 0 14px;
-  padding: 0 10px 0 0;
 }
 
 /* Second-Section - Accomodations List - Generic Styles - Tablet */
@@ -608,13 +606,13 @@ header .logo:hover {
     width: 100%;
     height: 600px;
     background: white;
-    padding: 30px 2% 10px 2%;
+    padding: 20px 2% 10px 2%;
   }
   .accomodations-list aside {
     width: 100%;
     height: 300px;
     border-radius: 0;
-    padding: 30px 2% 10px 2%;
+    padding: 20px 2% 10px 2%;
   }
   .accomodations-list aside .hostel {
     width: 30%;
@@ -627,21 +625,63 @@ header .logo:hover {
     width: 100%;
     height: 60%;
     border-radius: 14px 14px 0 0;
-    padding: 0 0 5px 0;
   }
 }
 
 /* Second-Section - Accomodations List - Generic Styles - Mobile */
 @media (max-width: 768px) {
   .accomodations-list {
+    height: auto;
     /* Second-Section - Accomodations List - Main Panel Styles - Mobile */
     /* Second-Section - Accomodations List - Aside Panel Styles - Mobile */
   }
   .accomodations-list main {
-    padding: 30px 5% 10px 5%;
+    padding: 10px 5% 10px 5%;
+    height: 1400px;
+  }
+  .accomodations-list main .hostels-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .accomodations-list main .hostels-list .hostel {
+    width: 100%;
+    height: 16%;
+    margin-bottom: 2%;
+  }
+  .accomodations-list main .hostels-list .hostel .inner-hostel {
+    height: 50%;
+  }
+  .accomodations-list main .hostels-list .hostel img {
+    height: 50%;
   }
   .accomodations-list aside {
-    padding: 30px 5% 10px 5%;
+    padding: 10px 5% 10px 5%;
+    height: 550px;
+  }
+  .accomodations-list aside .hostels-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .accomodations-list aside .hostels-list .hostel {
+    width: 100%;
+    height: 31%;
+  }
+  .accomodations-list aside .hostels-list .hostel .inner-hostel {
+    width: 50%;
+  }
+  .accomodations-list aside .hostels-list .hostel img {
+    width: 50%;
+    height: 100%;
+    border-radius: 14px 0 0 14px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
