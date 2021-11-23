@@ -119,6 +119,21 @@ $FBolder: 800;
         display: flex;
         cursor: pointer;
     }
+    .card {
+        background: white;
+        border-radius: 14px;
+        box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+    .card:hover {
+        transform: scale(1.06);
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+        h4,
+        p,
+        strong {
+            color: $basic-blue;
+        }
+    }
 }
 
 /* Header Section - Desktop */
@@ -368,12 +383,9 @@ header {
             font-size: $Small;
         }
         .hostel {
-            background: white;
-            border-radius: 14px;
             padding: 4px;
             display: flex;
             flex-wrap: wrap;
-            box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
             .inner-hostel {
                 display: flex;
                 flex-wrap: wrap;
@@ -392,17 +404,7 @@ header {
             }
             img {
                 object-fit: cover;
-                background-position: 50% 50%;
-            }
-        }
-        .hostel:hover {
-            transform: scale(1.08);
-            transition: all 0.4s ease-in-out;
-            cursor: pointer;
-            h4,
-            p,
-            strong {
-                color: $basic-blue;
+                background-position: center;
             }
         }
     }
@@ -503,9 +505,12 @@ header {
 @media (max-width: 768px) {
     .accomodations-list {
         height: auto;
+        .hostels-list {
+            height: 90%;
+        }
         /* Second-Section - Accomodations List - Main Panel Styles - Mobile */
         main {
-            padding: 10px 5% 10px 5%;
+            padding: 15px 5% 10px 5%;
             height: 1400px;
             .hostels-list {
                 //height: auto;
@@ -514,7 +519,7 @@ header {
                 align-content: space-between;
                 .hostel {
                     width: 100%;
-                    height: 16%;
+                    height: 15%;
                     margin-bottom: 2%;
                     .inner-hostel {
                         height: 50%;
@@ -528,7 +533,7 @@ header {
 
         /* Second-Section - Accomodations List - Aside Panel Styles - Mobile */
         aside {
-            padding: 10px 5% 10px 5%;
+            padding: 15px 5% 10px 5%;
             height: 550px;
             .hostels-list {
                 flex-direction: column;
@@ -544,6 +549,200 @@ header {
                         height: 100%;
                         border-radius: 14px 0 0 14px;
                     }
+                }
+            }
+        }
+    }
+}
+
+/* Third-Section - Activities List Panel Styles - Desktop */
+.activities {
+    margin: 30px 2.5% 120px 2.5%;
+    height: 600px;
+    .activities-list {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        .activity {
+            width: 23%;
+            img {
+                width: 100%;
+                height: 90%;
+                border-radius: 14px 14px 0 0;
+                object-fit: cover;
+                background-position: center;
+            }
+            .text-card {
+                padding: 3%;
+            }
+        }
+        //First Card
+        #vieux-port {
+            height: 100%;
+        }
+
+        //Second Card
+        #fort-pomègues {
+            height: 55%;
+            img {
+                height: 82%;
+            }
+        }
+
+        //Third Card
+        #iles-frioul {
+            height: 35%;
+            img {
+                height: 75%;
+            }
+        }
+
+        //Fourth Card
+        #parc-calanques {
+            height: 100%;
+        }
+
+        //Fith Card
+        #nddl-garde {
+            height: 45%;
+            img {
+                height: 78%;
+            }
+        }
+
+        //Sixth Card
+        #parc-longchamp {
+            height: 45%;
+            img {
+                height: 78%;
+            }
+        }
+    }
+}
+
+/* Third-Section - Activities List Panel Styles - Tablet */
+@media (max-width: 992px) {
+    .activities {
+        margin: 0 2.5% 120px 2.5%;
+        height: 700px;
+        .activities-list {
+            .activity {
+                width: 48%;
+            }
+
+            //First Card
+            #vieux-port {
+                height: 44%;
+                img {
+                    height: 85%;
+                }
+            }
+
+            //Second Card
+            #fort-pomègues {
+                height: 44%;
+                img {
+                    height: 85%;
+                }
+            }
+
+            //Third Card
+            #iles-frioul {
+                height: 22%;
+                img {
+                    height: 74%;
+                }
+            }
+
+            //Fourth Card
+            #parc-calanques {
+                height: 22%;
+                img {
+                    height: 74%;
+                }
+            }
+
+            //Fith Card
+            #nddl-garde {
+                height: 22%;
+                img {
+                    height: 74%;
+                }
+            }
+
+            //Sixth Card
+            #parc-longchamp {
+                height: 22%;
+                img {
+                    height: 74%;
+                }
+            }
+        }
+    }
+}
+
+/* Third-Section - Activities List Panel Styles - Mobile */
+@media (max-width: 768px) {
+    .activities {
+        margin: 0 5% 120px 5%;
+        height: 1200px;
+        .activities-list {
+            .activity {
+                width: 100%;
+                height: 14%;
+                img {
+                    height: 74%;
+                }
+            }
+
+            //First Card
+            #vieux-port {
+                height: 14%;
+                img {
+                    height: 85%;
+                }
+            }
+
+            //Second Card
+            #fort-pomègues {
+                height: 14%;
+                img {
+                    height: 85%;
+                }
+            }
+
+            //Third Card
+            #iles-frioul {
+                height: 14%;
+                img {
+                    height: 74%;
+                }
+            }
+
+            //Fourth Card
+            #parc-calanques {
+                height: 14%;
+                img {
+                    height: 74%;
+                }
+            }
+
+            //Fith Card
+            #nddl-garde {
+                height: 14%;
+                img {
+                    height: 74%;
+                }
+            }
+
+            //Sixth Card
+            #parc-longchamp {
+                height: 14%;
+                img {
+                    height: 74%;
                 }
             }
         }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Project Library - Colours - Sizes - Stars Rating*/
 /* Initialisation of Generic Style */
 * {
@@ -105,6 +106,27 @@
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+}
+
+* .card {
+  background: white;
+  border-radius: 14px;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+* .card:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+* .card:hover h4,
+* .card:hover p,
+* .card:hover strong {
+  color: #0065fc;
 }
 
 /* Header Section - Desktop */
@@ -440,16 +462,12 @@ header .logo:hover {
 }
 
 .accomodations-list .hostels-list .hostel {
-  background: white;
-  border-radius: 14px;
   padding: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .accomodations-list .hostels-list .hostel .inner-hostel {
@@ -499,21 +517,7 @@ header .logo:hover {
 .accomodations-list .hostels-list .hostel img {
   -o-object-fit: cover;
      object-fit: cover;
-  background-position: 50% 50%;
-}
-
-.accomodations-list .hostels-list .hostel:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-}
-
-.accomodations-list .hostels-list .hostel:hover h4,
-.accomodations-list .hostels-list .hostel:hover p,
-.accomodations-list .hostels-list .hostel:hover strong {
-  color: #0065fc;
+  background-position: center;
 }
 
 .accomodations-list main {
@@ -635,8 +639,11 @@ header .logo:hover {
     /* Second-Section - Accomodations List - Main Panel Styles - Mobile */
     /* Second-Section - Accomodations List - Aside Panel Styles - Mobile */
   }
+  .accomodations-list .hostels-list {
+    height: 90%;
+  }
   .accomodations-list main {
-    padding: 10px 5% 10px 5%;
+    padding: 15px 5% 10px 5%;
     height: 1400px;
   }
   .accomodations-list main .hostels-list {
@@ -650,7 +657,7 @@ header .logo:hover {
   }
   .accomodations-list main .hostels-list .hostel {
     width: 100%;
-    height: 16%;
+    height: 15%;
     margin-bottom: 2%;
   }
   .accomodations-list main .hostels-list .hostel .inner-hostel {
@@ -660,7 +667,7 @@ header .logo:hover {
     height: 50%;
   }
   .accomodations-list aside {
-    padding: 10px 5% 10px 5%;
+    padding: 15px 5% 10px 5%;
     height: 550px;
   }
   .accomodations-list aside .hostels-list {
@@ -682,6 +689,185 @@ header .logo:hover {
     width: 50%;
     height: 100%;
     border-radius: 14px 0 0 14px;
+  }
+}
+
+/* Third-Section - Activities List Panel Styles - Desktop */
+.activities {
+  margin: 30px 2.5% 120px 2.5%;
+  height: 600px;
+}
+
+.activities .activities-list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.activities .activities-list .activity {
+  width: 23%;
+}
+
+.activities .activities-list .activity img {
+  width: 100%;
+  height: 90%;
+  border-radius: 14px 14px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+}
+
+.activities .activities-list .activity .text-card {
+  padding: 3%;
+}
+
+.activities .activities-list #vieux-port {
+  height: 100%;
+}
+
+.activities .activities-list #fort-pomègues {
+  height: 55%;
+}
+
+.activities .activities-list #fort-pomègues img {
+  height: 82%;
+}
+
+.activities .activities-list #iles-frioul {
+  height: 35%;
+}
+
+.activities .activities-list #iles-frioul img {
+  height: 75%;
+}
+
+.activities .activities-list #parc-calanques {
+  height: 100%;
+}
+
+.activities .activities-list #nddl-garde {
+  height: 45%;
+}
+
+.activities .activities-list #nddl-garde img {
+  height: 78%;
+}
+
+.activities .activities-list #parc-longchamp {
+  height: 45%;
+}
+
+.activities .activities-list #parc-longchamp img {
+  height: 78%;
+}
+
+/* Third-Section - Activities List Panel Styles - Tablet */
+@media (max-width: 992px) {
+  .activities {
+    margin: 0 2.5% 120px 2.5%;
+    height: 700px;
+  }
+  .activities .activities-list .activity {
+    width: 48%;
+  }
+  .activities .activities-list #vieux-port {
+    height: 44%;
+  }
+  .activities .activities-list #vieux-port img {
+    height: 85%;
+  }
+  .activities .activities-list #fort-pomègues {
+    height: 44%;
+  }
+  .activities .activities-list #fort-pomègues img {
+    height: 85%;
+  }
+  .activities .activities-list #iles-frioul {
+    height: 22%;
+  }
+  .activities .activities-list #iles-frioul img {
+    height: 74%;
+  }
+  .activities .activities-list #parc-calanques {
+    height: 22%;
+  }
+  .activities .activities-list #parc-calanques img {
+    height: 74%;
+  }
+  .activities .activities-list #nddl-garde {
+    height: 22%;
+  }
+  .activities .activities-list #nddl-garde img {
+    height: 74%;
+  }
+  .activities .activities-list #parc-longchamp {
+    height: 22%;
+  }
+  .activities .activities-list #parc-longchamp img {
+    height: 74%;
+  }
+}
+
+/* Third-Section - Activities List Panel Styles - Mobile */
+@media (max-width: 768px) {
+  .activities {
+    margin: 0 5% 120px 5%;
+    height: 1200px;
+  }
+  .activities .activities-list .activity {
+    width: 100%;
+    height: 14%;
+  }
+  .activities .activities-list .activity img {
+    height: 74%;
+  }
+  .activities .activities-list #vieux-port {
+    height: 14%;
+  }
+  .activities .activities-list #vieux-port img {
+    height: 85%;
+  }
+  .activities .activities-list #fort-pomègues {
+    height: 14%;
+  }
+  .activities .activities-list #fort-pomègues img {
+    height: 85%;
+  }
+  .activities .activities-list #iles-frioul {
+    height: 14%;
+  }
+  .activities .activities-list #iles-frioul img {
+    height: 74%;
+  }
+  .activities .activities-list #parc-calanques {
+    height: 14%;
+  }
+  .activities .activities-list #parc-calanques img {
+    height: 74%;
+  }
+  .activities .activities-list #nddl-garde {
+    height: 14%;
+  }
+  .activities .activities-list #nddl-garde img {
+    height: 74%;
+  }
+  .activities .activities-list #parc-longchamp {
+    height: 14%;
+  }
+  .activities .activities-list #parc-longchamp img {
+    height: 74%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
