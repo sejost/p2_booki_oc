@@ -36,7 +36,7 @@
         Basic logo With 2 UL links
     -->
     <header>
-        <a class="logo" href="#"><img src="images/logo/Booki.png" href="#" alt="bookilog"></a>
+        <a class="logo" href="#"><img src="images/logo/Booki.png" alt="bookilog"></a>
         <nav>
             <ul class="navlinks">
                 <li>
@@ -50,8 +50,6 @@
             </ul>
 
         </nav>
-
-        </div>
     </header>
 
     <!-- 
@@ -70,7 +68,7 @@
         - Input to search
         - Checkbox used as filters
         -->
-        <form action="#" method="#">
+        <form action="#" method="post">
             <!--Need to add "Method : Post Action" | : Send to the page-->
 
             <!-- First FieldSet - Focus on the localisation of the accomodations -->
@@ -89,7 +87,7 @@
             <!-- Second FieldSet - Focus on the filters concerning accomodations -->
             <fieldset>
                 <div class="search-filters">
-                    <legend>Filtres</legend>
+                    <p>Filtres</p>
                     <div class="inner-filters">
 
                         <div class="filter">
@@ -98,7 +96,6 @@
                                 <i class="fas fa-money-bill-wave"></i>
                                 <label for="cbx-economical" id="label-economical">Économique</label>
                             </div>
-                            </input>
                         </div>
 
                         <div class="filter">
@@ -107,7 +104,6 @@
                                 <i class="fas fa-child"></i>
                                 <label for="cbx-family">Familial</label>
                             </div>
-                            </input>
                         </div>
 
                         <div class="filter">
@@ -116,7 +112,6 @@
                                 <i class="fas fa-heart"></i>
                                 <label for="cbx-romantic">Romantique</label>
                             </div>
-                            </input>
                         </div>
 
                         <div class="filter">
@@ -125,7 +120,6 @@
                                 <i class="fas fa-dog"></i>
                                 <label for="cbx-animals">Animaux Autorisés</label>
                             </div>
-                            </input>
                         </div>
                     </div>
                 </div>
@@ -146,7 +140,7 @@
     <section class="accomodations-list">
 
         <!-- Main Panel - list filtered accomodations -->
-        <main>
+        <div class="main-panel">
             <!-- First Card -->
             <h2>Hébergements à Marseille</h2>
             <div class="hostels-list">
@@ -249,10 +243,10 @@
 
             <!-- Panel's "Footer" -->
             <a href="#">Afficher plus</a>
-        </main>
+        </div>
 
         <!-- Aside Panel - list most populars' accomodations -->
-        <aside>
+        <div class="aside-panel">
             <div class="header-aside">
                 <h2>Les plus populaires</h2> <i class="fas fa-chart-line"></i>
             </div>
@@ -299,7 +293,7 @@
                     </div>
                 </div>
             </div>
-        </aside>
+        </div>
     </section>
 
     <!-- 
@@ -314,7 +308,7 @@
         <!--First Card-->
         <div class="activities-list">
             <div class="card activity" id="vieux-port">
-                <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                 <div class="text-card">
                     <h4>Vieux Port</h4>
                 </div>
@@ -322,7 +316,7 @@
 
             <!--Second Card-->
             <div class="card activity" id="fort-pomègues">
-                <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
 
                 <div class="text-card">
                     <h4>Fort de Pomègues</h4>
@@ -331,7 +325,7 @@
 
             <!--Third Card-->
             <div class="card activity" id="iles-frioul">
-                <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                 <div class="text-card">
                     <h4>Îles du Frioul</h4>
                 </div>
@@ -339,7 +333,8 @@
 
             <!--Fourth Card-->
             <div class="card activity" id="parc-calanques">
-                <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                    alt="Parc National des Calanques">
                 <div class="text-card">
                     <h4>Parc National des Calanques</h4>
                 </div>
@@ -347,7 +342,8 @@
 
             <!--Fith Card-->
             <div class="card activity" id="nddl-garde">
-                <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                    alt="Notre-Dame-de-la-Garde">
                 <div class="text-card">
                     <h4>Notre-Dame-de-la-Garde</h4>
                 </div>
@@ -355,7 +351,7 @@
 
             <!--Sixth Card-->
             <div class="card activity" id="parc-longchamp">
-                <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                 <div class="text-card">
                     <h4>Parc Longchamp</h4>
                 </div>

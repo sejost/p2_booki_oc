@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* Project Library - Colours - Sizes - Stars Rating*/
+/* 
+Library of Stars Rating Card
+Implement a number of star according to the card's class name
+*/
 /* Initialisation of Generic Style */
 * {
   /* Global Part */
@@ -71,10 +75,6 @@
 
 * p {
   font-weight: 400;
-}
-
-* legend {
-  margin-right: 2%;
 }
 
 * input {
@@ -319,6 +319,11 @@ header .logo:hover {
           align-items: baseline;
 }
 
+.search-filters p {
+  font-weight: 600;
+  margin-right: 2%;
+}
+
 .search-filters .inner-filters {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,8 +396,9 @@ header .logo:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .search-filters legend {
+  .search-filters p {
     margin-bottom: 15px;
+    margin-right: 2%;
   }
   .search-filters .inner-filters {
     margin: 0 5% 0 5%;
@@ -530,23 +536,23 @@ header .logo:hover {
   background-position: center;
 }
 
-.accomodations-list main {
+.accomodations-list .main-panel {
   width: 66%;
   padding: 30px 2% 10px 2%;
   background: #f2f2f2;
   border-radius: 14px;
 }
 
-.accomodations-list main a {
+.accomodations-list .main-panel a {
   font-weight: 600;
 }
 
-.accomodations-list main .hostel {
+.accomodations-list .main-panel .hostel {
   width: 30%;
   height: 45%;
 }
 
-.accomodations-list main .hostel .inner-hostel {
+.accomodations-list .main-panel .hostel .inner-hostel {
   height: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,20 +561,20 @@ header .logo:hover {
       align-content: space-between;
 }
 
-.accomodations-list main .hostel img {
+.accomodations-list .main-panel .hostel img {
   width: 100%;
   height: 60%;
   border-radius: 14px 14px 0 0;
 }
 
-.accomodations-list aside {
+.accomodations-list .aside-panel {
   width: 32%;
   padding: 30px 2% 10px 2%;
   background: #f2f2f2;
   border-radius: 14px;
 }
 
-.accomodations-list aside .header-aside {
+.accomodations-list .aside-panel .header-aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,12 +586,12 @@ header .logo:hover {
           justify-content: space-between;
 }
 
-.accomodations-list aside .hostel {
+.accomodations-list .aside-panel .hostel {
   width: 100%;
   height: 28%;
 }
 
-.accomodations-list aside .hostel .inner-hostel {
+.accomodations-list .aside-panel .hostel .inner-hostel {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,7 +601,7 @@ header .logo:hover {
           justify-content: space-between;
 }
 
-.accomodations-list aside .hostel img {
+.accomodations-list .aside-panel .hostel img {
   width: 50%;
   height: 100%;
   border-radius: 14px 0 0 14px;
@@ -616,26 +622,26 @@ header .logo:hover {
     /* Second-Section - Accomodations List - Main Panel Styles - Tablet */
     /* Second-Section - Accomodations List - Aside Panel Styles - Tablet */
   }
-  .accomodations-list main {
+  .accomodations-list .main-panel {
     width: 100%;
     height: 600px;
     background: white;
     padding: 20px 2% 10px 2%;
   }
-  .accomodations-list aside {
+  .accomodations-list .aside-panel {
     width: 100%;
     height: 300px;
     border-radius: 0;
     padding: 20px 2% 10px 2%;
   }
-  .accomodations-list aside .hostel {
+  .accomodations-list .aside-panel .hostel {
     width: 30%;
     height: 100%;
   }
-  .accomodations-list aside .hostel .inner-hostel {
+  .accomodations-list .aside-panel .hostel .inner-hostel {
     width: 100%;
   }
-  .accomodations-list aside .hostel img {
+  .accomodations-list .aside-panel .hostel img {
     width: 100%;
     height: 60%;
     border-radius: 14px 14px 0 0;
@@ -652,11 +658,11 @@ header .logo:hover {
   .accomodations-list .hostels-list {
     height: 90%;
   }
-  .accomodations-list main {
+  .accomodations-list .main-panel {
     padding: 15px 5% 10px 5%;
     height: 1400px;
   }
-  .accomodations-list main .hostels-list {
+  .accomodations-list .main-panel .hostels-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -665,22 +671,22 @@ header .logo:hover {
     -ms-flex-line-pack: justify;
         align-content: space-between;
   }
-  .accomodations-list main .hostels-list .hostel {
+  .accomodations-list .main-panel .hostels-list .hostel {
     width: 100%;
     height: 15%;
     margin-bottom: 2%;
   }
-  .accomodations-list main .hostels-list .hostel .inner-hostel {
+  .accomodations-list .main-panel .hostels-list .hostel .inner-hostel {
     height: 50%;
   }
-  .accomodations-list main .hostels-list .hostel img {
+  .accomodations-list .main-panel .hostels-list .hostel img {
     height: 50%;
   }
-  .accomodations-list aside {
+  .accomodations-list .aside-panel {
     padding: 15px 5% 10px 5%;
     height: 550px;
   }
-  .accomodations-list aside .hostels-list {
+  .accomodations-list .aside-panel .hostels-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -688,14 +694,14 @@ header .logo:hover {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  .accomodations-list aside .hostels-list .hostel {
+  .accomodations-list .aside-panel .hostels-list .hostel {
     width: 100%;
     height: 31%;
   }
-  .accomodations-list aside .hostels-list .hostel .inner-hostel {
+  .accomodations-list .aside-panel .hostels-list .hostel .inner-hostel {
     width: 50%;
   }
-  .accomodations-list aside .hostels-list .hostel img {
+  .accomodations-list .aside-panel .hostels-list .hostel img {
     width: 50%;
     height: 100%;
     border-radius: 14px 0 0 14px;
