@@ -128,8 +128,14 @@ $FBolder: 800;
         border-radius: 14px;
         box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
     }
+    /* 
+    Depending on your preferences, 
+    you can modify the hover effect on a transform: scale 
+    or an enlarged shadow effect. 
+    */
     .card:hover {
-        transform: scale(1.06);
+        //transform: scale(1.06);
+        box-shadow: 14px 14px 24px 0px rgba(0, 0, 0, 0.4);
         transition: all 0.4s ease-in-out;
         cursor: pointer;
         h4,
@@ -150,7 +156,7 @@ header {
         width: 60%;
     }
     .logo:hover {
-        transform: scale(1.04);
+        transform: scale(1.02);
     }
 }
 
