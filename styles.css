@@ -59,6 +59,11 @@
   color: #0065fc;
 }
 
+* a:hover h4,
+* a:hover p {
+  color: #0065fc;
+}
+
 * p {
   font-weight: 400;
 }
@@ -695,7 +700,7 @@ header .logo:hover {
 /* Third-Section - Activities List Panel Styles - Desktop */
 .activities {
   margin: 30px 2.5% 120px 2.5%;
-  height: 600px;
+  height: 450px;
 }
 
 .activities .activities-list {
@@ -750,7 +755,7 @@ header .logo:hover {
 }
 
 .activities .activities-list #iles-frioul img {
-  height: 75%;
+  height: 72%;
 }
 
 .activities .activities-list #parc-calanques {
@@ -777,7 +782,7 @@ header .logo:hover {
 @media (max-width: 992px) {
   .activities {
     margin: 0 2.5% 120px 2.5%;
-    height: 700px;
+    height: 600px;
   }
   .activities .activities-list .activity {
     width: 48%;
@@ -824,7 +829,7 @@ header .logo:hover {
 @media (max-width: 768px) {
   .activities {
     margin: 0 5% 120px 5%;
-    height: 1200px;
+    height: 1000px;
   }
   .activities .activities-list .activity {
     width: 100%;
@@ -868,6 +873,73 @@ header .logo:hover {
   }
   .activities .activities-list #parc-longchamp img {
     height: 74%;
+  }
+}
+
+/* Footer Section - Desktop */
+footer {
+  padding: 2% 30% 5% 2.5%;
+  height: 200px;
+  background: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer a {
+  padding-top: 10px;
+}
+
+footer .footer-apropos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-accomodations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-assistance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Footer Section - Tablet */
+@media (max-width: 992px) {
+  footer {
+    padding: 1.5% 20% 5% 2.5%;
+    height: 150px;
+  }
+}
+
+/* Footer Section - Mobile */
+@media (max-width: 768px) {
+  footer {
+    padding: 1% 20% 5% 5%;
+    height: 400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=styles.css.map */

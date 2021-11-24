@@ -80,6 +80,10 @@ $FBolder: 800;
     }
     a:hover {
         color: $basic-blue;
+        h4,
+        p {
+            color: $basic-blue;
+        }
     }
     p {
         font-weight: $FLight;
@@ -513,7 +517,6 @@ header {
             padding: 15px 5% 10px 5%;
             height: 1400px;
             .hostels-list {
-                //height: auto;
                 display: flex;
                 flex-wrap: wrap;
                 align-content: space-between;
@@ -558,7 +561,7 @@ header {
 /* Third-Section - Activities List Panel Styles - Desktop */
 .activities {
     margin: 30px 2.5% 120px 2.5%;
-    height: 600px;
+    height: 450px;
     .activities-list {
         height: 100%;
         display: flex;
@@ -596,7 +599,7 @@ header {
         #iles-frioul {
             height: 35%;
             img {
-                height: 75%;
+                height: 72%;
             }
         }
 
@@ -627,7 +630,7 @@ header {
 @media (max-width: 992px) {
     .activities {
         margin: 0 2.5% 120px 2.5%;
-        height: 700px;
+        height: 600px;
         .activities-list {
             .activity {
                 width: 48%;
@@ -688,7 +691,7 @@ header {
 @media (max-width: 768px) {
     .activities {
         margin: 0 5% 120px 5%;
-        height: 1200px;
+        height: 1000px;
         .activities-list {
             .activity {
                 width: 100%;
@@ -746,5 +749,47 @@ header {
                 }
             }
         }
+    }
+}
+
+/* Footer Section - Desktop */
+footer {
+    padding: 2% 30% 5% 2.5%;
+    height: 200px;
+    background: $basic-gray;
+    display: flex;
+    justify-content: space-between;
+    a {
+        padding-top: 10px;
+    }
+    .footer-apropos {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-accomodations {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-assistance {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Footer Section - Tablet */
+@media (max-width: 992px) {
+    footer {
+        padding: 1.5% 20% 5% 2.5%;
+        height: 150px;
+    }
+}
+
+/* Footer Section - Mobile */
+
+@media (max-width: 768px) {
+    footer {
+        padding: 1% 20% 5% 5%;
+        height: 400px;
+        flex-direction: column;
     }
 }
