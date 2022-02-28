@@ -7,5 +7,5 @@
 /node_modules/
 
 # No mock-up files
-src/mock-up
-
+mock-up
+*.code-workspace
