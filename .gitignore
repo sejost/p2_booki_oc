@@ -3,9 +3,9 @@
 *.txt
 *.docx
 *.doc
-*.json
-/node_modules/
 
-# No mock-up files
-mock-up
+# block specific folders
+
 *.code-workspace
+/node_modules
+/P2_*

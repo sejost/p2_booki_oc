@@ -1,0 +1,23 @@
+{
+  "name": "p2-booki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.44.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch  src/scss/main.scss:dist/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sejost/p2_booki_oc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sejost/p2_booki_oc/issues"
+  },
+  "homepage": "https://github.com/sejost/p2_booki_oc#readme"
+}
