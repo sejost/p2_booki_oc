@@ -9,12 +9,10 @@ Implement a number of star according to the card's class name
   /* Global Part */
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: black;
-  -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   /* Type text Part */
   /* Containers Text Part */
@@ -24,69 +22,52 @@ Implement a number of star according to the card's class name
     or an enlarged shadow effect. 
     */
 }
-
-* ::-moz-selection {
-  background-color: #0065fc;
-  color: white;
-}
-
 * ::selection {
   background-color: #0065fc;
   color: white;
 }
-
 * h1 {
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 5px;
 }
-
 * h2 {
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 20px;
 }
-
 * h3 {
   font-weight: 600;
   font-size: 19px;
   margin-bottom: 10px;
 }
-
 * h4 {
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 6px;
 }
-
 * a {
   text-decoration: none;
   font-weight: 400;
 }
-
 * a:hover {
   color: #0065fc;
 }
-
 * a:hover h4,
 * a:hover p {
   color: #0065fc;
 }
-
 * p {
   font-weight: 400;
 }
-
 * input {
   padding-left: 5px;
   border: solid #f2f2f2;
   border-width: 1px 0;
 }
-
 * input:focus {
   outline: 1px solid #0065fc;
 }
-
 * .btn {
   width: 120px;
   border: none;
@@ -96,43 +77,30 @@ Implement a number of star according to the card's class name
   color: white;
   cursor: pointer;
 }
-
 * form {
   margin: 20px 0;
 }
-
 * fieldset {
   padding: 0;
   margin: 0;
   border: none;
 }
-
 * label {
   margin: 0 10px 0px 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
   cursor: pointer;
 }
-
 * .card {
   background: white;
   border-radius: 14px;
-  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
-
 * .card:hover {
-  -webkit-box-shadow: 14px 14px 24px 0px rgba(0, 0, 0, 0.4);
-          box-shadow: 14px 14px 24px 0px rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 0.4s ease-in-out;
+  box-shadow: 14px 14px 24px 0px rgba(0, 0, 0, 0.4);
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
-
 * .card:hover h4,
 * .card:hover p,
 * .card:hover strong {
@@ -141,25 +109,16 @@ Implement a number of star according to the card's class name
 
 /* Header Section - Desktop */
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin: 30px 3% 30px 4%;
 }
-
 header .logo img {
   width: 60%;
 }
-
 header .logo:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .navlinks li {
@@ -168,14 +127,12 @@ header .logo:hover {
   width: 150px;
   text-align: center;
 }
-
 .navlinks li div {
   height: 3px;
   width: 100%;
   position: relative;
   bottom: 68px;
 }
-
 .navlinks li a:hover + .first-select,
 .navlinks li a:hover + .second-select {
   background-color: #0065fc;
@@ -184,12 +141,8 @@ header .logo:hover {
 /* Header Section - Mobile (less than 768px) */
 @media (max-width: 768px) {
   header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    flex-direction: column;
+    box-sizing: border-box;
     margin: 10px 0 0 0;
   }
   header .logo img {
@@ -198,13 +151,13 @@ header .logo:hover {
     position: relative;
     left: 23%;
   }
+
   nav,
-  .navlinks {
+.navlinks {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
+
   .navlinks li {
     list-style-type: none;
     display: inline-block;
@@ -218,63 +171,43 @@ header .logo:hover {
     top: 15px;
   }
 }
-
 /* Accomodations Search Section / Form Section - Desktop */
 .form-choice {
   margin: 30px 3% 30px 3%;
 }
-
 .form-choice .city-choice {
   height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-bottom: 30px;
 }
-
 .form-choice .city-choice .icon {
   width: 45px;
   background: #f2f2f2;
   color: black;
   border-radius: 14px 0 0 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .form-choice .city-choice .icon:hover {
   background: #0065fc;
   color: white;
 }
-
 .form-choice .city-choice .research-input {
   padding-left: 20px;
   width: 220px;
 }
-
 .form-choice .city-choice .research-btn {
   width: 120px;
 }
-
 .form-choice .city-choice .research-btn:hover {
   background: #f2f2f2;
   color: black;
 }
-
 .form-choice .city-choice .research-btn:hover i {
   color: black;
 }
-
 .form-choice .city-choice .mobile-btn {
   display: none;
 }
@@ -285,7 +218,6 @@ header .logo:hover {
     margin: 15px 2% 5% 15px;
   }
 }
-
 /* Accomodations Search Section / Form Section - Mobile (less than 768px) */
 @media (max-width: 768px) {
   .form-choice {
@@ -308,65 +240,46 @@ header .logo:hover {
     color: white;
   }
 }
-
 /* Filters Search Sub-section - Desktop */
 .search-filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
 }
-
 .search-filters p {
   font-weight: 600;
   margin-right: 2%;
 }
-
 .search-filters .inner-filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
-.search-filters .inner-filters input[type="checkbox"] {
+.search-filters .inner-filters input[type=checkbox] {
   display: none;
   position: relative;
 }
-
-.search-filters .inner-filters .filter input[type="checkbox"]:hover + .inner-label {
+.search-filters .inner-filters .filter input[type=checkbox]:hover + .inner-label {
   background: #0065fc;
 }
-
-.search-filters .inner-filters .filter input[type="checkbox"]:hover + .inner-label i {
+.search-filters .inner-filters .filter input[type=checkbox]:hover + .inner-label i {
   background: #f2f2f2;
   color: black;
 }
-
-.search-filters .inner-filters .filter input[type="checkbox"]:hover + .inner-label label {
+.search-filters .inner-filters .filter input[type=checkbox]:hover + .inner-label label {
   color: white;
 }
-
-.search-filters .inner-filters .filter input[type="checkbox"]:checked ~ .inner-label {
+.search-filters .inner-filters .filter input[type=checkbox]:checked ~ .inner-label {
   background: #0065fc;
 }
-
-.search-filters .inner-filters .filter input[type="checkbox"]:checked ~ .inner-label label {
+.search-filters .inner-filters .filter input[type=checkbox]:checked ~ .inner-label label {
   color: white;
 }
-
 .search-filters .inner-filters .inner-label {
   height: 45px;
   border: solid #d9d9d9;
   border-width: 2px;
   border-radius: 0px 30px 30px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 50px 0 0;
 }
-
 .search-filters .inner-filters .inner-label i {
   background: #deebff;
   color: #0065fc;
@@ -374,27 +287,16 @@ header .logo:hover {
   height: calc(100% + 6px);
   border-radius: 30px;
   margin: -3px 0 0 -18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Accomodations Search Section - Tablet (less than 992px) */
 @media (max-width: 992px) {
   .search-filters {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .search-filters p {
     margin-bottom: 15px;
@@ -402,27 +304,18 @@ header .logo:hover {
   }
   .search-filters .inner-filters {
     margin: 0 5% 0 5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   .search-filters .inner-filters .inner-label {
     margin-bottom: 15px;
   }
 }
-
 /* Footer of Accomodations Search Section - Desktop */
 .footer-panel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .footer-panel i {
   width: 20px;
   height: 20px;
@@ -431,15 +324,9 @@ header .logo:hover {
   border-radius: 30px;
   padding: 2px 1px 1px 1px;
   margin-right: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  justify-content: center;
+  align-items: baseline;
   color: #0065fc;
   font-size: 12px;
 }
@@ -447,160 +334,105 @@ header .logo:hover {
 /* Second-Section - Accomodations List - Generic Styles - Desktop */
 .accomodations-list {
   margin: 30px 2.5%;
-  height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 700px;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   /* Second-Section - Accomodations List - Main Panel Styles - Desktop */
   /* Second-Section - Accomodations List - Aside Panel Styles - Desktop */
 }
-
 .accomodations-list .hostels-list {
   height: 80%;
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
-
 .accomodations-list .hostels-list p {
   font-size: 12px;
 }
-
 .accomodations-list .hostels-list .hostel {
   padding: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .accomodations-list .hostels-list .hostel .inner-hostel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 3%;
 }
-
 .accomodations-list .hostels-list .hostel .inner-hostel .text-card {
   height: 80%;
 }
-
 .accomodations-list .hostels-list .hostel .inner-hostel .stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-
 .accomodations-list .hostels-list .hostel .inner-hostel .stars i {
   font-size: 12px;
 }
-
 .accomodations-list .hostels-list .hostel .inner-hostel .three-stars i {
   color: #0065fc;
 }
-
-.accomodations-list .hostels-list .hostel .inner-hostel .three-stars i:nth-child(n + 4) {
+.accomodations-list .hostels-list .hostel .inner-hostel .three-stars i:nth-child(n+4) {
   color: #d9d9d9;
 }
-
 .accomodations-list .hostels-list .hostel .inner-hostel .four-stars i {
   color: #0065fc;
 }
-
-.accomodations-list .hostels-list .hostel .inner-hostel .four-stars i:nth-child(n + 5) {
+.accomodations-list .hostels-list .hostel .inner-hostel .four-stars i:nth-child(n+5) {
   color: #d9d9d9;
 }
-
 .accomodations-list .hostels-list .hostel .inner-hostel .five-stars i {
   color: #0065fc;
 }
-
 .accomodations-list .hostels-list .hostel img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-position: center;
 }
-
 .accomodations-list .main-panel {
   width: 66%;
   padding: 30px 2% 10px 2%;
   background: #f2f2f2;
   border-radius: 14px;
 }
-
 .accomodations-list .main-panel a {
   font-weight: 600;
 }
-
 .accomodations-list .main-panel .hostel {
   width: 30%;
   height: 45%;
 }
-
 .accomodations-list .main-panel .hostel .inner-hostel {
   height: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  align-content: space-between;
 }
-
 .accomodations-list .main-panel .hostel img {
   width: 100%;
   height: 60%;
   border-radius: 14px 14px 0 0;
 }
-
 .accomodations-list .aside-panel {
   width: 32%;
   padding: 30px 2% 10px 2%;
   background: #f2f2f2;
   border-radius: 14px;
 }
-
 .accomodations-list .aside-panel .header-aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: baseline;
+  justify-content: space-between;
 }
-
 .accomodations-list .aside-panel .hostel {
   width: 100%;
   height: 28%;
 }
-
 .accomodations-list .aside-panel .hostel .inner-hostel {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .accomodations-list .aside-panel .hostel img {
   width: 50%;
   height: 100%;
@@ -613,12 +445,8 @@ header .logo:hover {
     margin: 30px 0;
     width: 100%;
     height: auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
     /* Second-Section - Accomodations List - Main Panel Styles - Tablet */
     /* Second-Section - Accomodations List - Aside Panel Styles - Tablet */
   }
@@ -647,7 +475,6 @@ header .logo:hover {
     border-radius: 14px 14px 0 0;
   }
 }
-
 /* Second-Section - Accomodations List - Generic Styles - Mobile */
 @media (max-width: 768px) {
   .accomodations-list {
@@ -663,13 +490,9 @@ header .logo:hover {
     height: 1400px;
   }
   .accomodations-list .main-panel .hostels-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
   }
   .accomodations-list .main-panel .hostels-list .hostel {
     width: 100%;
@@ -687,12 +510,8 @@ header .logo:hover {
     height: 550px;
   }
   .accomodations-list .aside-panel .hostels-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   .accomodations-list .aside-panel .hostels-list .hostel {
     width: 100%;
@@ -707,135 +526,83 @@ header .logo:hover {
     border-radius: 14px 0 0 14px;
   }
 }
-
 /* Third-Section - Activities List Panel Styles - Desktop */
 .activities {
   margin: 30px 2.5% 120px 2.5%;
-  height: 450px;
+  height: 600px;
 }
-
 .activities .activities-list {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
-
 .activities .activities-list .activity {
   width: 23%;
 }
-
 .activities .activities-list .activity img {
   width: 100%;
   height: 90%;
   border-radius: 14px 14px 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-position: center;
 }
-
 .activities .activities-list .activity .text-card {
   padding: 3%;
 }
-
-.activities .activities-list #vieux-port {
-  height: 100%;
-}
-
-.activities .activities-list #fort-pomègues {
-  height: 55%;
-}
-
-.activities .activities-list #fort-pomègues img {
-  height: 82%;
-}
-
-.activities .activities-list #iles-frioul {
-  height: 35%;
-}
-
-.activities .activities-list #iles-frioul img {
-  height: 72%;
-}
-
+.activities .activities-list #vieux-port,
 .activities .activities-list #parc-calanques {
   height: 100%;
 }
-
-.activities .activities-list #nddl-garde {
-  height: 45%;
-}
-
-.activities .activities-list #nddl-garde img {
-  height: 78%;
-}
-
+.activities .activities-list #fort-pomègues,
 .activities .activities-list #parc-longchamp {
-  height: 45%;
+  height: 55%;
 }
-
+.activities .activities-list #fort-pomègues img,
 .activities .activities-list #parc-longchamp img {
-  height: 78%;
+  height: 82.5%;
+}
+.activities .activities-list #iles-frioul,
+.activities .activities-list #nddl-garde {
+  height: 40%;
+}
+.activities .activities-list #iles-frioul img,
+.activities .activities-list #nddl-garde img {
+  height: 76%;
 }
 
 /* Third-Section - Activities List Panel Styles - Tablet */
 @media (max-width: 992px) {
   .activities {
     margin: 0 2.5% 120px 2.5%;
-    height: 600px;
+    height: 800px;
   }
   .activities .activities-list .activity {
     width: 48%;
   }
-  .activities .activities-list #vieux-port {
-    height: 44%;
+  .activities .activities-list #vieux-port,
+.activities .activities-list #fort-pomègues {
+    height: 48%;
   }
-  .activities .activities-list #vieux-port img {
-    height: 85%;
+  .activities .activities-list #vieux-port img,
+.activities .activities-list #fort-pomègues img {
+    height: 330px;
   }
-  .activities .activities-list #fort-pomègues {
-    height: 44%;
-  }
-  .activities .activities-list #fort-pomègues img {
-    height: 85%;
-  }
-  .activities .activities-list #iles-frioul {
+  .activities .activities-list #iles-frioul,
+.activities .activities-list #parc-calanques,
+.activities .activities-list #nddl-garde,
+.activities .activities-list #parc-longchamp {
     height: 22%;
   }
-  .activities .activities-list #iles-frioul img {
-    height: 74%;
-  }
-  .activities .activities-list #parc-calanques {
-    height: 22%;
-  }
-  .activities .activities-list #parc-calanques img {
-    height: 74%;
-  }
-  .activities .activities-list #nddl-garde {
-    height: 22%;
-  }
-  .activities .activities-list #nddl-garde img {
-    height: 74%;
-  }
-  .activities .activities-list #parc-longchamp {
-    height: 22%;
-  }
-  .activities .activities-list #parc-longchamp img {
-    height: 74%;
+  .activities .activities-list #iles-frioul img,
+.activities .activities-list #parc-calanques img,
+.activities .activities-list #nddl-garde img,
+.activities .activities-list #parc-longchamp img {
+    height: 125px;
   }
 }
-
 /* Third-Section - Activities List Panel Styles - Mobile */
 @media (max-width: 768px) {
   .activities {
@@ -844,94 +611,46 @@ header .logo:hover {
   }
   .activities .activities-list .activity {
     width: 100%;
+  }
+  .activities .activities-list #vieux-port,
+.activities .activities-list #fort-pomègues,
+.activities .activities-list #iles-frioul,
+.activities .activities-list #parc-calanques,
+.activities .activities-list #nddl-garde,
+.activities .activities-list #parc-longchamp {
     height: 15%;
   }
-  .activities .activities-list .activity img {
-    height: 72%;
-  }
-  .activities .activities-list #vieux-port {
-    height: 15%;
-  }
-  .activities .activities-list #vieux-port img {
-    height: 72%;
-  }
-  .activities .activities-list #fort-pomègues {
-    height: 15%;
-  }
-  .activities .activities-list #fort-pomègues img {
-    height: 72%;
-  }
-  .activities .activities-list #iles-frioul {
-    height: 15%;
-  }
-  .activities .activities-list #iles-frioul img {
-    height: 72%;
-  }
-  .activities .activities-list #parc-calanques {
-    height: 15%;
-  }
-  .activities .activities-list #parc-calanques img {
-    height: 72%;
-  }
-  .activities .activities-list #nddl-garde {
-    height: 15%;
-  }
-  .activities .activities-list #nddl-garde img {
-    height: 72%;
-  }
-  .activities .activities-list #parc-longchamp {
-    height: 15%;
-  }
-  .activities .activities-list #parc-longchamp img {
-    height: 72%;
+  .activities .activities-list #vieux-port img,
+.activities .activities-list #fort-pomègues img,
+.activities .activities-list #iles-frioul img,
+.activities .activities-list #parc-calanques img,
+.activities .activities-list #nddl-garde img,
+.activities .activities-list #parc-longchamp img {
+    height: 100px;
   }
 }
-
 /* Footer Section - Desktop */
 footer {
   padding: 2% 30% 5% 2.5%;
   height: 200px;
   background: #f2f2f2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 footer a {
   padding-top: 10px;
 }
-
 footer .footer-apropos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 footer .footer-accomodations {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 footer .footer-assistance {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 /* Footer Section - Tablet */
@@ -941,16 +660,13 @@ footer .footer-assistance {
     height: 150px;
   }
 }
-
 /* Footer Section - Mobile */
 @media (max-width: 768px) {
   footer {
     padding: 1% 20% 5% 5%;
     height: 400px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
+
 /*# sourceMappingURL=styles.css.map */
