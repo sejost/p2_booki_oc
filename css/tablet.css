@@ -1,0 +1,98 @@
+/* Accomodations Search Section - Tablet (less than 992px) */
+@media (max-width: 992px) {
+  .search-filters {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-filters p {
+    margin-bottom: 15px;
+    margin-right: 2%;
+  }
+  .search-filters .inner-filters {
+    margin: 0 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .search-filters .inner-filters .inner-label {
+    margin-bottom: 15px;
+  }
+}
+
+/* Second-Section - Accomodations List - Generic Styles - Tablet */
+@media (max-width: 992px) {
+  .accomodations-list {
+    margin: 30px 0;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  /* Second-Section - Accomodations List - Main Panel Styles - Tablet */
+  .accomodations-list .main-panel {
+    width: 100%;
+    height: 600px;
+    background: white;
+    padding: 20px 2% 10px 2%;
+  }
+
+  /* Second-Section - Accomodations List - Aside Panel Styles - Tablet */
+  .accomodations-list .aside-panel {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    padding: 20px 2% 10px 2%;
+  }
+  .accomodations-list .aside-panel .hostel {
+    width: 30%;
+    height: 100%;
+  }
+  .accomodations-list .aside-panel .hostel .inner-hostel {
+    width: 100%;
+  }
+  .accomodations-list .aside-panel .hostel img {
+    width: 100%;
+    height: 60%;
+    border-radius: 14px 14px 0 0;
+  }
+}
+
+/* Third-Section - Activities List Panel Styles - Tablet */
+@media (max-width: 992px) {
+  .activities {
+    margin: 0 2.5% 120px 2.5%;
+    height: 800px;
+  }
+  .activities .activities-list .activity {
+    width: 48%;
+  }
+  .activities .activities-list #vieux-port,
+  .activities .activities-list #fort-pomègues {
+    height: 48%;
+  }
+  .activities .activities-list #vieux-port img,
+  .activities .activities-list #fort-pomègues img {
+    height: 330px;
+  }
+  .activities .activities-list #iles-frioul,
+  .activities .activities-list #parc-calanques,
+  .activities .activities-list #nddl-garde,
+  .activities .activities-list #parc-longchamp {
+    height: 22%;
+  }
+  .activities .activities-list #iles-frioul img,
+  .activities .activities-list #parc-calanques img,
+  .activities .activities-list #nddl-garde img,
+  .activities .activities-list #parc-longchamp img {
+    height: 125px;
+  }
+}
+
+/* Footer Section - Tablet */
+@media (max-width: 992px) {
+  footer {
+    padding: 1.5% 20% 5% 2.5%;
+    height: 150px;
+  }
+}

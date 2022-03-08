@@ -1,0 +1,447 @@
+@charset "UTF-8";
+/* Initialisation of Generic Style */
+* {
+  /* Global Part */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: black;
+  transition: all 0.1s ease-in-out;
+}
+::selection {
+  background-color: #0065fc;
+  color: white;
+}
+h1 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-weight: 600;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+h4 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+}
+a:hover {
+  color: #0065fc;
+}
+a:hover h4,
+a:hover p {
+  color: #0065fc;
+}
+p {
+  font-weight: 400;
+}
+input {
+  padding-left: 5px;
+  border: solid #f2f2f2;
+  border-width: 1px 0;
+}
+input:focus {
+  outline: 1px solid #0065fc;
+}
+.btn {
+  width: 120px;
+  border: none;
+  padding: 0;
+  border-radius: 0 14px 14px 0;
+  background: #0065fc;
+  color: white;
+  cursor: pointer;
+}
+form {
+  margin: 20px 0;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+label {
+  margin: 0 10px 0px 10px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 14px 14px 24px 0px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.card:hover h4,
+.card:hover p,
+.card:hover strong {
+  color: #0065fc;
+}
+
+/* Header Section - Desktop */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 3% 30px 4%;
+}
+header .logo img {
+  width: 60%;
+}
+header .logo:hover {
+  transform: scale(1.02);
+}
+
+.navlinks li {
+  list-style-type: none;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+}
+.navlinks li div {
+  height: 3px;
+  width: 100%;
+  position: relative;
+  bottom: 68px;
+}
+.navlinks li a:hover + .first-select,
+.navlinks li a:hover + .second-select {
+  background-color: #0065fc;
+}
+
+/* Accomodations Search Section / Form Section - Desktop */
+.form-choice {
+  margin: 30px 3% 30px 3%;
+}
+.form-choice .city-choice {
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.form-choice .city-choice .icon {
+  width: 45px;
+  background: #f2f2f2;
+  color: black;
+  border-radius: 14px 0 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-choice .city-choice .icon:hover {
+  background: #0065fc;
+  color: white;
+}
+.form-choice .city-choice .research-input {
+  padding-left: 20px;
+  width: 220px;
+}
+.form-choice .city-choice .research-btn {
+  width: 120px;
+}
+.form-choice .city-choice .research-btn:hover {
+  background: #f2f2f2;
+  color: black;
+}
+.form-choice .city-choice .research-btn:hover i {
+  color: black;
+}
+.form-choice .city-choice .mobile-btn {
+  display: none;
+}
+
+/* Accomodations Search Section / Form Section - Tablet ( less than 992px) */
+@media (max-width: 992px) {
+  .form-choice {
+    margin: 15px 2% 5% 15px;
+  }
+}
+
+/* Filters Search Sub-section - Desktop */
+.search-filters {
+  display: flex;
+  align-items: baseline;
+}
+.search-filters p {
+  font-weight: 600;
+  margin-right: 2%;
+}
+.search-filters .inner-filters {
+  display: flex;
+}
+.search-filters .inner-filters input[type="checkbox"] {
+  display: none;
+  position: relative;
+}
+.search-filters
+  .inner-filters
+  .filter
+  input[type="checkbox"]:hover
+  + .inner-label {
+  background: #0065fc;
+}
+.search-filters
+  .inner-filters
+  .filter
+  input[type="checkbox"]:hover
+  + .inner-label
+  i {
+  background: #f2f2f2;
+  color: black;
+}
+.search-filters
+  .inner-filters
+  .filter
+  input[type="checkbox"]:hover
+  + .inner-label
+  label {
+  color: white;
+}
+.search-filters
+  .inner-filters
+  .filter
+  input[type="checkbox"]:checked
+  ~ .inner-label {
+  background: #0065fc;
+}
+.search-filters
+  .inner-filters
+  .filter
+  input[type="checkbox"]:checked
+  ~ .inner-label
+  label {
+  color: white;
+}
+.search-filters .inner-filters .inner-label {
+  height: 45px;
+  border: solid #d9d9d9;
+  border-width: 2px;
+  border-radius: 0px 30px 30px 0px;
+  display: flex;
+  margin: 0 50px 0 0;
+}
+.search-filters .inner-filters .inner-label i {
+  background: #deebff;
+  color: #0065fc;
+  width: 45px;
+  height: calc(100% + 6px);
+  border-radius: 30px;
+  margin: -3px 0 0 -18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer of Accomodations Search Section - Desktop */
+.footer-panel {
+  display: flex;
+}
+.footer-panel i {
+  width: 20px;
+  height: 20px;
+  border: solid #d9d9d9;
+  border-width: 1.5px;
+  border-radius: 30px;
+  padding: 2px 1px 1px 1px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: #0065fc;
+  font-size: 12px;
+}
+
+/* Second-Section - Accomodations List - Generic Styles - Desktop */
+.accomodations-list {
+  margin: 30px 2.5%;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+.hostels-list {
+  height: 80%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.hostels-list p {
+  font-size: 12px;
+}
+.hostel {
+  padding: 4px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.inner-hostel {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+.text-card {
+  height: 80%;
+}
+.stars {
+  display: flex;
+  width: 100%;
+}
+.stars i {
+  font-size: 12px;
+}
+.three-stars i {
+  color: #0065fc;
+}
+.three-stars i:nth-child(n + 4) {
+  color: #d9d9d9;
+}
+.four-stars i {
+  color: #0065fc;
+}
+.four-stars i:nth-child(n + 5) {
+  color: #d9d9d9;
+}
+.five-stars i {
+  color: #0065fc;
+}
+.hostel img {
+  object-fit: cover;
+  background-position: center;
+}
+.main-panel {
+  width: 66%;
+  padding: 30px 2% 10px 2%;
+  background: #f2f2f2;
+  border-radius: 14px;
+}
+.main-panel a {
+  font-weight: 600;
+}
+.main-panel .hostel {
+  width: 30%;
+  height: 45%;
+}
+.main-panel .hostel .inner-hostel {
+  height: 40%;
+  display: flex;
+  align-content: space-between;
+}
+.main-panel .hostel img {
+  width: 100%;
+  height: 60%;
+  border-radius: 14px 14px 0 0;
+}
+.aside-panel {
+  width: 32%;
+  padding: 30px 2% 10px 2%;
+  background: #f2f2f2;
+  border-radius: 14px;
+}
+.header-aside {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.hostel {
+  width: 100%;
+  height: 28%;
+}
+.inner-hostel {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.hostel img {
+  width: 50%;
+  height: 100%;
+  border-radius: 14px 0 0 14px;
+}
+
+/* Third-Section - Activities List Panel Styles - Desktop */
+.activities {
+  margin: 30px 2.5% 120px 2.5%;
+  height: 600px;
+}
+
+.activities-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.activity {
+  width: 23%;
+}
+.activity img {
+  width: 100%;
+  height: 90%;
+  border-radius: 14px 14px 0 0;
+  object-fit: cover;
+  background-position: center;
+}
+.activity .text-card {
+  padding: 3%;
+}
+#vieux-port,
+#parc-calanques {
+  height: 100%;
+}
+#fort-pomègues,
+#parc-longchamp {
+  height: 55%;
+}
+#fort-pomègues img,
+#parc-longchamp img {
+  height: 82.5%;
+}
+#iles-frioul,
+#nddl-garde {
+  height: 40%;
+}
+#iles-frioul img,
+#nddl-garde img {
+  height: 76%;
+}
+
+/* Footer Section - Desktop */
+footer {
+  padding: 2% 30% 5% 2.5%;
+  height: 200px;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+footer a {
+  padding-top: 10px;
+}
+.footer-apropos {
+  display: flex;
+  flex-direction: column;
+}
+.footer-accomodations {
+  display: flex;
+  flex-direction: column;
+}
+.footer-assistance {
+  display: flex;
+  flex-direction: column;
+}

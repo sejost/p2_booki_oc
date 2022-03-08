@@ -1,0 +1,147 @@
+/* Header Section - Mobile (less than 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+  }
+  header .logo img {
+    width: 75%;
+    margin-bottom: 5%;
+    position: relative;
+    left: 23%;
+  }
+
+  nav,
+  .navlinks {
+    width: 100%;
+    display: flex;
+  }
+
+  .navlinks li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 0;
+    width: 50%;
+  }
+  .navlinks li div {
+    background: #f2f2f2;
+    height: 3px;
+    position: relative;
+    top: 15px;
+  }
+}
+
+/* Accomodations Search Section / Form Section - Mobile (less than 768px) */
+@media (max-width: 768px) {
+  .form-choice {
+    margin: 40px 5% 5% 10px;
+  }
+  .form-choice .city-choice .research-btn {
+    width: 45px;
+    height: calc(100% + 2px);
+    margin-top: -1px;
+    border-radius: 14px;
+    margin-left: -20px;
+  }
+  .form-choice .city-choice .desktop-btn {
+    display: none;
+  }
+  .form-choice .city-choice .mobile-btn {
+    display: inline;
+  }
+  .form-choice .city-choice .mobile-btn i {
+    color: white;
+  }
+}
+
+/* Second-Section - Accomodations List - Generic Styles - Mobile */
+@media (max-width: 768px) {
+  .accomodations-list {
+    height: auto;
+  }
+  .accomodations-list .hostels-list {
+    height: 90%;
+  }
+
+  /* Second-Section - Accomodations List - Main Panel Styles - Mobile */
+  .accomodations-list .main-panel {
+    padding: 15px 5% 10px 5%;
+    height: 1400px;
+  }
+  .accomodations-list .main-panel .hostels-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  .accomodations-list .main-panel .hostels-list .hostel {
+    width: 100%;
+    height: 15%;
+    margin-bottom: 2%;
+  }
+  .accomodations-list .main-panel .hostels-list .hostel .inner-hostel {
+    height: 50%;
+  }
+  .accomodations-list .main-panel .hostels-list .hostel img {
+    height: 50%;
+  }
+
+  /* Second-Section - Accomodations List - Aside Panel Styles - Mobile */
+  .accomodations-list .aside-panel {
+    padding: 15px 5% 10px 5%;
+    height: 550px;
+  }
+  .accomodations-list .aside-panel .hostels-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .accomodations-list .aside-panel .hostels-list .hostel {
+    width: 100%;
+    height: 31%;
+  }
+  .accomodations-list .aside-panel .hostels-list .hostel .inner-hostel {
+    width: 50%;
+  }
+  .accomodations-list .aside-panel .hostels-list .hostel img {
+    width: 50%;
+    height: 100%;
+    border-radius: 14px 0 0 14px;
+  }
+}
+
+/* Third-Section - Activities List Panel Styles - Mobile */
+@media (max-width: 768px) {
+  .activities {
+    margin: 0 5% 120px 5%;
+    height: 1000px;
+  }
+  .activities .activities-list .activity {
+    width: 100%;
+  }
+  .activities .activities-list #vieux-port,
+  .activities .activities-list #fort-pomègues,
+  .activities .activities-list #iles-frioul,
+  .activities .activities-list #parc-calanques,
+  .activities .activities-list #nddl-garde,
+  .activities .activities-list #parc-longchamp {
+    height: 15%;
+  }
+  .activities .activities-list #vieux-port img,
+  .activities .activities-list #fort-pomègues img,
+  .activities .activities-list #iles-frioul img,
+  .activities .activities-list #parc-calanques img,
+  .activities .activities-list #nddl-garde img,
+  .activities .activities-list #parc-longchamp img {
+    height: 100px;
+  }
+}
+
+/* Footer Section - Mobile */
+@media (max-width: 768px) {
+  footer {
+    padding: 1% 20% 5% 5%;
+    height: 400px;
+    flex-direction: column;
+  }
+}
