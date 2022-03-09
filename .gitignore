@@ -3,8 +3,13 @@
 *.txt
 *.docx
 *.doc
+*_old.css
+*- Copies.css
+*_backgup1.css
+*_backgup2.css
 
 # block specific folders
 *.code-workspace
 /node_modules
 /P2_*
+/old_css
