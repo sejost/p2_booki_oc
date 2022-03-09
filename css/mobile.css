@@ -30,10 +30,9 @@
     position: relative;
     top: 15px;
   }
-}
 
-/* Accomodations Search Section / Form Section - Mobile (less than 768px) */
-@media (max-width: 768px) {
+  /* Accomodations Search Section / Form Section - Mobile (less than 768px) */
+
   .form-choice {
     margin: 40px 5% 5% 10px;
   }
@@ -53,10 +52,9 @@
   .form-choice .city-choice .mobile-btn i {
     color: white;
   }
-}
 
-/* Second-Section - Accomodations List - Generic Styles - Mobile */
-@media (max-width: 768px) {
+  /* Second-Section - Accomodations List - Generic Styles - Mobile */
+
   .accomodations-list {
     height: auto;
   }
@@ -108,10 +106,9 @@
     height: 100%;
     border-radius: 14px 0 0 14px;
   }
-}
 
-/* Third-Section - Activities List Panel Styles - Mobile */
-@media (max-width: 768px) {
+  /* Third-Section - Activities List Panel Styles - Mobile */
+
   .activities {
     height: 1000px;
     margin: 0 5% 120px 5%;
@@ -124,10 +121,9 @@
   .card__activity img {
     height: 100px;
   }
-}
 
-/* Footer Section - Mobile */
-@media (max-width: 768px) {
+  /* Footer Section - Mobile */
+
   footer {
     height: 400px;
     padding: 1% 20% 5% 5%;

@@ -194,13 +194,6 @@ header .logo img {
   display: none;
 }
 
-/* Accomodations Search Section / Form Section - Tablet ( less than 992px) */
-@media (max-width: 992px) {
-  .form-choice {
-    margin: 15px 2% 5% 15px;
-  }
-}
-
 /* Filters Search Sub-section - Desktop */
 .search-filters {
   display: flex;
@@ -221,6 +214,7 @@ header .logo img {
   position: relative;
 }
 
+/* Filters Search Sub-section - Hover effect on label and icon -Desktop */
 .search-filters
   .inner-filters
   .filter
