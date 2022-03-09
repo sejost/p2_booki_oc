@@ -64,27 +64,21 @@
     margin: 0 2.5% 120px 2.5%;
     height: 800px;
   }
-  .activities .activities-list .activity {
+  .card__activity {
     width: 48%;
   }
-  .activities .activities-list #vieux-port,
-  .activities .activities-list #fort-pomègues {
+  .card__activity--large {
     height: 48%;
   }
-  .activities .activities-list #vieux-port img,
-  .activities .activities-list #fort-pomègues img {
+  .card__activity--large img {
     height: 330px;
   }
-  .activities .activities-list #iles-frioul,
-  .activities .activities-list #parc-calanques,
-  .activities .activities-list #nddl-garde,
-  .activities .activities-list #parc-longchamp {
+  .card__activity--medium,
+  .card__activity--small {
     height: 22%;
   }
-  .activities .activities-list #iles-frioul img,
-  .activities .activities-list #parc-calanques img,
-  .activities .activities-list #nddl-garde img,
-  .activities .activities-list #parc-longchamp img {
+  .card__activity--medium img,
+  .card__activity--small img {
     height: 125px;
   }
 }

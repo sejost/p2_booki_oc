@@ -450,11 +450,11 @@ header .logo img {
   align-content: space-between;
 }
 
-.card__activity {
+.activity {
   width: 23%;
 }
 
-.card__activity img {
+.activity img {
   width: 100%;
   height: 90%;
   border-radius: 14px 14px 0 0;
@@ -462,27 +462,32 @@ header .logo img {
   background-position: center;
 }
 
-.card__activity .text-card {
+.activity .text-card {
   padding: 3%;
 }
 
-.card__activity--large {
+#vieux-port,
+#parc-calanques {
   height: 100%;
 }
 
-.card__activity--medium {
+#fort-pomègues,
+#parc-longchamp {
   height: 55%;
 }
 
-.card__activity--medium img {
+#fort-pomègues img,
+#parc-longchamp img {
   height: 82.5%;
 }
 
-.card__activity--small {
+#iles-frioul,
+#nddl-garde {
   height: 40%;
 }
 
-.card__activity--small img {
+#iles-frioul img,
+#nddl-garde img {
   height: 76%;
 }
 
