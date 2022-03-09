@@ -46,12 +46,15 @@ a {
   font-weight: 400;
 }
 
-a:hover {
+a:hover,
+a:active {
   color: #0065fc;
 }
 
 a:hover h4,
-a:hover p {
+a:hover p,
+a:active h4,
+a:active p {
   color: #0065fc;
 }
 
@@ -102,7 +105,8 @@ label {
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.card:hover {
+.card:hover,
+.card:active {
   box-shadow: 14px 14px 24px 0 rgba(0, 0, 0, 0.4);
   transition: all 0.4s ease-in-out;
   cursor: pointer;
@@ -110,7 +114,10 @@ label {
 
 .card:hover h4,
 .card:hover p,
-.card:hover strong {
+.card:hover strong,
+.card:active h4,
+.card:active p,
+.card:active strong {
   color: #0065fc;
 }
 
@@ -141,7 +148,9 @@ header .logo img {
 }
 
 .navlinks a:hover + .first-select,
-.navlinks a:hover + .second-select {
+.navlinks a:hover + .second-select,
+.navlinks a:active + .first-select,
+.navlinks a:active + .second-select {
   background-color: #0065fc;
 }
 
@@ -167,7 +176,8 @@ header .logo img {
   justify-content: center;
 }
 
-.city-choice .icon:hover {
+.city-choice .icon:hover,
+.city-choice .icon:active {
   background: #0065fc;
   color: #fff;
 }
@@ -181,12 +191,14 @@ header .logo img {
   width: 120px;
 }
 
-.city-choice .research-btn:hover {
+.city-choice .research-btn:hover,
+.city-choice .research-btn:active {
   background: #f2f2f2;
   color: #000;
 }
 
-.city-choice .research-btn:hover i {
+.city-choice .research-btn:hover i,
+.city-choice .research-btn:active i {
   color: #000;
 }
 
@@ -219,6 +231,11 @@ header .logo img {
   .inner-filters
   .filter
   input[type="checkbox"]:hover
+  + .inner-label,
+.search-filters
+  .inner-filters
+  .filter
+  input[type="checkbox"]:active
   + .inner-label {
   background: #0065fc;
 }
@@ -227,6 +244,12 @@ header .logo img {
   .inner-filters
   .filter
   input[type="checkbox"]:hover
+  + .inner-label
+  i,
+.search-filters
+  .inner-filters
+  .filter
+  input[type="checkbox"]:active
   + .inner-label
   i {
   background: #f2f2f2;
@@ -237,6 +260,12 @@ header .logo img {
   .inner-filters
   .filter
   input[type="checkbox"]:hover
+  + .inner-label
+  label,
+.search-filters
+  .inner-filters
+  .filter
+  input[type="checkbox"]:active
   + .inner-label
   label {
   color: #fff;
