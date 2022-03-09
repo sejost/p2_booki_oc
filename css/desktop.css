@@ -497,17 +497,7 @@ footer a {
   padding-top: 10px;
 }
 
-.footer-apropos {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-accomodations {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-assistance {
+.footer__part {
   display: flex;
   flex-direction: column;
 }

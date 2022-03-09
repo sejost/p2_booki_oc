@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <!-- 
     Head Part Including : 
     - Google Fonts
@@ -10,7 +9,6 @@
     - Font Awesom Icons
     - Favicons
 -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,10 +27,7 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
-
 <body>
-
     <!-- 
         Header Part
         Basic logo With 2 UL links
@@ -142,7 +137,7 @@
     <section class="accomodations-list">
 
         <!-- Main Panel - list filtered accomodations -->
-        <div class="main-panel" id="accomodations">
+        <div class="main-panel" id="accomodations__anchor">
             
             <h2>Hébergements à Marseille</h2>
             <div class="hostels-list">
@@ -181,7 +176,7 @@
                 </a>
 
                 <!-- Third Card -->
-                <a href="#accomodations" class="card card__hostel card__hostel--main">
+                <a href="#accomodations__anchor" class="card card__hostel card__hostel--main">
                     <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                         alt="Hôtel Les mouettes">
                     <div class="inner-hostel">
@@ -250,7 +245,7 @@
         </div>
 
         <!-- Aside Panel - list most populars' accomodations -->
-        <div class="aside-panel" id="most-popular">
+        <div class="aside-panel" id="most-popular__anchor">
             <div class="header-aside">
                 <h2>Les plus populaires</h2> <i class="fas fa-chart-line"></i>
             </div>
@@ -258,7 +253,7 @@
             <div class="hostels-list">
 
                 <!-- First Card -->
-                <a href="#most-popular" class="card card__hostel card__hostel--aside">
+                <a href="#most-popular__anchor" class="card card__hostel card__hostel--aside">
                     <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                         alt="Hôtel Le soleil du matin">
                     <div class="inner-hostel">
@@ -272,7 +267,7 @@
                 </a>
 
                 <!-- Second Card -->
-                <a href="#most-popular" class="card card__hostel card__hostel--aside">
+                <a href="#most-popular__anchor" class="card card__hostel card__hostel--aside">
                     <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                         alt="Au coeur de l'eau Chambres d'hôtes">
                     <div class="inner-hostel">
@@ -286,7 +281,7 @@
                 </a>
 
                 <!-- Third Card -->
-                <a href="#most-popular" class="card card__hostel card__hostel--aside">
+                <a href="#most-popular__anchor" class="card card__hostel card__hostel--aside">
                     <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                         alt="Hôtel Tout bleu et tout Blanc">
                     <div class="inner-hostel">
@@ -369,32 +364,33 @@
     <!-- 
         Footer Section 
     -->
-    <footer id="footer">
-        <div class="footer-apropos">
-            <a href="#footer">
-                <h4>A propos</h4>
-            </a>
-            <a href="#footer">Fonctionnement du site</a>
-            <a href="#footer">Condition générales de vente</a>
-            <a href="#footer">Données et confidentialité</a>
+    <footer id="footer__anchor">
 
+            <div class="footer__part">
+                <a href="#footer__anchor">
+                    <h4>A propos</h4>
+                </a>
+                <a href="#footer__anchor">Fonctionnement du site</a>
+                <a href="#footer__anchor">Condition générales de vente</a>
+                <a href="#footer__anchor">Données et confidentialité</a>
 
-        </div>
-        <div class="footer-accomodations">
-            <a href="#footer">
-                <h4>Nos hébergements</h4>
-            </a>
-            <a href="#footer">Charte qualité</a>
-            <a href="#footer">Soumettre votre hôtel</a>
-        </div>
+            </div>
+            <div class="footer__part">
+                <a href="#footer__anchor">
+                    <h4>Nos hébergements</h4>
+                </a>
+                <a href="#footer__anchor">Charte qualité</a>
+                <a href="#footer__anchor">Soumettre votre hôtel</a>
+            </div>
 
-        <div class="footer-assistance">
-            <a href="#footer">
-                <h4>Assistance</h4>
-            </a>
-            <a href="#footer">Centre d'aide</a>
-            <a href="#footer">Nous contacter</a>
-        </div>
+            <div class="footer__part">
+                <a href="#footer__anchor">
+                    <h4>Assistance</h4>
+                </a>
+                <a href="#footer__anchor">Centre d'aide</a>
+                <a href="#footer__anchor">Nous contacter</a>
+            </div>
+
     </footer>
 </body>
 
