@@ -3,11 +3,11 @@
 /* Initialisation of Generic Style */
 * {
   /* Global Part */
+  box-sizing: border-box;
+  font-weight: 600;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
   color: #000;
   transition: all 0.1s ease-in-out;
 }
@@ -84,9 +84,9 @@ form {
 }
 
 fieldset {
+  border: none;
   padding: 0;
   margin: 0;
-  border: none;
 }
 
 label {
@@ -116,10 +116,10 @@ label {
 
 /* Header Section - Desktop */
 header {
+  margin: 30px 3% 30px 4%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 3% 30px 4%;
 }
 
 header .logo img {
@@ -128,14 +128,14 @@ header .logo img {
 
 .navlinks li {
   list-style-type: none;
-  display: inline-block;
   width: 150px;
+  display: inline-block;
   text-align: center;
 }
 
 .navlinks li div {
-  height: 3px;
   width: 100%;
+  height: 3px;
   position: relative;
   bottom: 68px;
 }
@@ -152,9 +152,9 @@ header .logo img {
 
 .city-choice {
   height: 45px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
 }
 
 .city-choice .icon {
@@ -173,8 +173,8 @@ header .logo img {
 }
 
 .city-choice .research-input {
-  padding-left: 20px;
   width: 220px;
+  padding-left: 20px;
 }
 
 .city-choice .research-btn {
@@ -267,20 +267,21 @@ header .logo img {
 
 .search-filters .inner-filters .inner-label {
   height: 45px;
+  margin: 0 50px 0 0;
   border: solid #d9d9d9;
   border-width: 2px;
   border-radius: 0 30px 30px 0;
-  display: flex;
   margin: 0 50px 0 0;
+  display: flex;
 }
 
 .search-filters .inner-filters .inner-label i {
-  background: #deebff;
-  color: #0065fc;
   width: 45px;
   height: calc(100% + 6px);
-  border-radius: 30px;
   margin: -3px 0 0 -18px;
+  background: #deebff;
+  color: #0065fc;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,17 +300,17 @@ header .logo img {
   border-radius: 30px;
   padding: 2px 1px 1px;
   margin-right: 10px;
+  color: #0065fc;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: baseline;
-  color: #0065fc;
-  font-size: 12px;
 }
 
 /* Second-Section - Accomodations List - Generic Styles - Desktop */
 .accomodations-list {
-  margin: 30px 2.5%;
   height: 700px;
+  margin: 30px 2.5%;
   display: flex;
   justify-content: space-between;
 }
@@ -327,21 +328,25 @@ header .logo img {
   font-size: 12px;
 }
 
-.hostel {
+.card__hostel {
   padding: 4px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .inner-hostel {
+  padding: 3%;
   display: flex;
   flex-wrap: wrap;
-  padding: 3%;
+  justify-content: space-between;
 }
 
-.inner-hostel .text-card {
-  height: 80%;
+.card__hostel img {
+  object-fit: cover;
+  background-position: center;
 }
+
+/* Second-Section - Accomodations List - Stars Styles - Desktop */
 
 .stars {
   display: flex;
@@ -372,11 +377,7 @@ header .logo img {
   color: #0065fc;
 }
 
-.hostel img {
-  object-fit: cover;
-  background-position: center;
-}
-
+/* Second-Section - Accomodations List - Main Panel - Desktop */
 .main-panel {
   width: 66%;
   padding: 30px 2% 10px;
@@ -388,23 +389,22 @@ header .logo img {
   font-weight: 600;
 }
 
-.main-panel .hostel {
+.card__hostel--main {
   width: 30%;
   height: 45%;
 }
 
-.main-panel .hostel .inner-hostel {
+.card__hostel--main .inner-hostel {
   height: 40%;
-  display: flex;
-  align-content: space-between;
 }
 
-.main-panel .hostel img {
+.card__hostel--main img {
   width: 100%;
   height: 60%;
   border-radius: 14px 14px 0 0;
 }
 
+/* Second-Section - Accomodations List - Main Panel - Desktop */
 .aside-panel {
   width: 32%;
   padding: 30px 2% 10px;
@@ -418,18 +418,16 @@ header .logo img {
   justify-content: space-between;
 }
 
-.hostel {
+.card__hostel--aside {
   width: 100%;
   height: 28%;
 }
 
-.inner-hostel {
+.card__hostel--aside .inner-hostel {
   width: 50%;
-  display: flex;
-  justify-content: space-between;
 }
 
-.hostel img {
+.card__hostel--aside img {
   width: 50%;
   height: 100%;
   border-radius: 14px 0 0 14px;
@@ -488,8 +486,8 @@ header .logo img {
 
 /* Footer Section - Desktop */
 footer {
-  padding: 2% 30% 5% 2.5%;
   height: 200px;
+  padding: 2% 30% 5% 2.5%;
   background: #f2f2f2;
   display: flex;
   justify-content: space-between;
